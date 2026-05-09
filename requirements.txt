@@ -1,0 +1,2 @@
+# EDLM Memory Framework requirements
+sqlite-vec

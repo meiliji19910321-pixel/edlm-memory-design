@@ -1,0 +1,27 @@
+# EDLM Memory Framework 使用指南
+
+## 工作流程
+
+1. **SessionStart** → 自动加载 `me.md` + `core.md` + `briefing/current.md` + HOT patterns
+2. **执行任务** → AI 执行并记录到 experience
+3. **SessionEnd** → 自动 rotate 检查层级
+4. **Stop** → 保存会话摘要
+
+## 存储位置
+
+所有数据存储在 `D:\CLAUDE.MD\` 目录：
+
+- `memory/me.md` - L0 身份层
+- `memory/core.md` - L1 全局索引
+- `memory/experiences/` - 经验库
+- `memory/patterns/` - 成功模式
+- `memory/briefing/` - 会话摘要
+- `memory/archive/` - COLD 层归档
+- `corpora/memory.db` - SQLite 数据库
+
+## 重要规则
+
+- **decision 类型**: 完整 verbatim 记录
+- **process 类型**: 500字以内摘要
+- **用户 override**: 说"这个重要/详细记住" → verbatim
+- **validation_count >= 5** → 自动升级到 skills/
