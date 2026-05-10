@@ -1,0 +1,4 @@
+@echo off
+cd /d D:\OpenClaw
+node node_modules\openclaw\openclaw.mjs %*
+pause

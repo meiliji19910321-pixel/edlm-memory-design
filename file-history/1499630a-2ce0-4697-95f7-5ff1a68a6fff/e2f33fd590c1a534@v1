@@ -1,0 +1,11 @@
+# Claude Code Settings
+
+## Memory
+
+I have a hierarchical memory system at `~/.claude/memory/`.
+
+**Session start:** Run `/mem load` in background to load context.
+**During session:** Run `/mem save <observation>` in background when I learn something worth keeping.
+**When stuck:** Run `/mem recall <query>` to retrieve relevant past learnings.
+
+Memory structure: `core.md` (summaries + pointers) → `topics/<topic>.md` (details)

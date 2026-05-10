@@ -1,0 +1,43 @@
+{
+  "secrets": {
+    "providers": {
+      "minimax": {
+        "source": "env"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax/MiniMax-M2.7"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimax.io/anthropic",
+        "models": []
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.29",
+    "lastTouchedAt": "2026-05-03T15:20:50.587Z"
+  },
+  "plugins": {
+    "entries": {
+      "minimax": {
+        "enabled": true
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "19910321"
+    },
+    "mode": "local"
+  }
+}

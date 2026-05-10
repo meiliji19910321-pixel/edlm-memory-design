@@ -1,0 +1,132 @@
+{
+  "numStartups": 28,
+  "hasSeenTasksHint": true,
+  "tipsHistory": {
+    "new-user-warmup": 8,
+    "plan-mode-for-complex-tasks": 25,
+    "terminal-setup": 14,
+    "memory-command": 17,
+    "theme-command": 23,
+    "powershell-tool-env": 24,
+    "status-line": 27,
+    "prompt-queue": 2,
+    "enter-to-steer-in-relatime": 23,
+    "todo-list": 23,
+    "install-github-app": 14,
+    "install-slack-app": 14,
+    "drag-and-drop-images": 25,
+    "double-esc-code-restore": 25,
+    "continue": 25,
+    "shift-tab": 25,
+    "image-paste": 24,
+    "desktop-app": 19,
+    "web-app": 20,
+    "custom-agents": 21,
+    "feedback-command": 21,
+    "color-when-multi-clauding": 14,
+    "permissions": 25,
+    "rename-conversation": 14
+  },
+  "promptQueueUseCount": 24,
+  "firstStartTime": "2026-05-03T13:45:29.076Z",
+  "opusProMigrationComplete": true,
+  "sonnet1m45MigrationComplete": true,
+  "seenNotifications": {},
+  "migrationVersion": 13,
+  "userID": "2e87385ae94118e6412c906bd9ca349169dd82318b21daca46b8ca91a5954278",
+  "changelogLastFetched": 1777815929644,
+  "hasCompletedOnboarding": true,
+  "lastOnboardingVersion": "2.1.126",
+  "projects": {
+    "C:/Users/Administrator/AppData/Local/Microsoft/WindowsApps": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 3,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastGracefulShutdown": false,
+      "lastHintSessionId": "e529b550-a07d-44ac-9818-c935c2daf342",
+      "lastSessionFirstPrompt": "先修复\"C:\\Users\\Administrator\\Desktop\\Claude Code.lnk\"",
+      "lastSessionModified": 1778228023427
+    },
+    "D:/Apps/ClaudeCode": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastGracefulShutdown": false,
+      "lastHintSessionId": "49b476a6-8ff4-4e20-a5c8-07057cb11776",
+      "lastSessionFirstPrompt": "升级到最新版本，但是不要碰到更新的记忆框架",
+      "lastSessionModified": 1778226368591
+    },
+    "C:/Users/Administrator/AppData/Local/Microsoft/WinGet/Links": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 1,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastGracefulShutdown": false,
+      "lastHintSessionId": "4c17d322-1966-4c4d-bb02-4889bd5bedf4",
+      "lastSessionFirstPrompt": "\"C:\\Users\\Administrator\\Desktop\\Claude Code.lnk\"修复这个图标",
+      "lastSessionModified": 1778228171631
+    },
+    "C:/Users/Administrator/AppData/Local/Microsoft/WinGet/Packages/Anthropic.ClaudeCode_Microsoft.Winget.Source_8wekyb3d8bbwe": {
+      "allowedTools": [],
+      "mcpContextUris": [],
+      "mcpServers": {},
+      "enabledMcpjsonServers": [],
+      "disabledMcpjsonServers": [],
+      "hasTrustDialogAccepted": true,
+      "projectOnboardingSeenCount": 0,
+      "hasClaudeMdExternalIncludesApproved": false,
+      "hasClaudeMdExternalIncludesWarningShown": false,
+      "lastGracefulShutdown": false,
+      "lastHintSessionId": "b83f37df-fa16-48cf-a916-d18cf518c0cb",
+      "lastSessionFirstPrompt": "嗯嗯，push上去",
+      "lastSessionModified": 1778387226440
+    }
+  },
+  "lastReleaseNotesSeen": "2.1.132",
+  "officialMarketplaceAutoInstallAttempted": true,
+  "officialMarketplaceAutoInstalled": false,
+  "officialMarketplaceAutoInstallFailReason": "git_unavailable",
+  "officialMarketplaceAutoInstallRetryCount": 6,
+  "officialMarketplaceAutoInstallLastAttemptTime": 1778205326694,
+  "officialMarketplaceAutoInstallNextRetryTime": 1778435726694,
+  "skillUsage": {
+    "update-config": {
+      "usageCount": 6,
+      "lastUsedAt": 1778351505063
+    },
+    "mem": {
+      "usageCount": 4,
+      "lastUsedAt": 1778142568646
+    },
+    "superpowers": {
+      "usageCount": 2,
+      "lastUsedAt": 1778295181042
+    },
+    "brainstorming": {
+      "usageCount": 2,
+      "lastUsedAt": 1778294249439
+    },
+    "writing-plans": {
+      "usageCount": 1,
+      "lastUsedAt": 1778207677608
+    }
+  },
+  "showSpinnerTree": false
+}

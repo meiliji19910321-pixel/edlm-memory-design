@@ -1,0 +1,15 @@
+{
+  "description": "Memory system SessionStart hook - injects identity and recent context",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"D:\\CLAUDE.MD\\mem\\hooks\\mem_session_start_hook.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

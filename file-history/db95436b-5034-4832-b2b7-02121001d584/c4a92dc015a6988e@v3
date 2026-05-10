@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(D:\\memory\\**)",
+      "Write(D:\\memory\\**)"
+    ]
+  },
+  "env": {
+    "MEMORY_PATH": "D:\\memory",
+    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "sk-cp-OY8wuEI7s5aPMiIejVZa1GRfg80feS_EE1TqiPla_ZusanLcGOh10yNCm5seO4WiR5P2nQYqFjHNlp5pySQYcHuw1Ch9v2uD98D4pbxf4-lKcwc_Mx61g18",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M2.7",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "includeCoAuthoredBy": false,
+  "theme": "dark"
+}

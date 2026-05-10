@@ -1,0 +1,146 @@
+# 融合架构方案：Markdown 记忆层 + SQLite-vec 向量检索
+
+## Context
+
+用户需要：
+1. 永久记忆（已有 D:\CLAUDE.MD\memory\）
+2. 向量语义检索（claude-mem 的 Chroma 未运行）
+3. 节省存储空间（排斥全量 verbatim + 外部向量库）
+
+现有系统问题：
+- claude-mem：Chroma 外部服务占空间（~936MB/10K向量），且服务未运行
+- 全量 verbatim：token 浪费严重
+- 我内置记忆：无向量检索，纯 grep
+
+## 三者优势融合
+
+| 优势 | 来源 |
+|------|------|
+| 4层记忆栈（L0-L3，按需加载）| mempalace-node |
+| 逐字原文 + LRU 向量缓存（7.5MB/5K向量）| mempalace-node |
+| 流式 top-K，内存峰值恒定 | mempalace-node |
+| 感知系统 + 显著性评分 + 遗忘曲线 | agent-recall-mcp |
+| Obsidian 兼容 Markdown 格式 | agent-recall-mcp |
+| 200行硬上限强制合并 | agent-recall-mcp |
+| 生动图像编码（对抗幻觉）| memory-palace-red-queen |
+
+## 推荐架构
+
+### 存储布局
+
+```
+D:\CLAUDE.MD\
+├── memory\                    # L0-L2 Markdown（始终可用）
+│   ├── me.md                 # L0: 身份 ~100 tokens，始终加载
+│   ├── core.md               # L1: 核心摘要 + 主题索引，始终加载
+│   ├── projects\             # L2: 项目级记忆（按需加载）
+│   │   └── {project}\        #   项目名/
+│   │       ├── identity.md  #   项目身份卡
+│   │       ├── palace\       #   记忆宫殿房间
+│   │       │   ├── goals.md
+│   │       │   ├── decisions.md
+│   │       │   ├── architecture.md
+│   │       │   └── learnings.md
+│   │       └── journal\      #   每日日志
+│   └── archive\             # L3: 低频记忆（压缩归档）
+│       └── YYYY-MM.json
+└── corpora\                 # 向量索引（极小空间）
+    └── memory.vec            # SQLite-vec 数据库 (~5MB/5K向量)
+```
+
+### 4层记忆说明
+
+| 层级 | 内容 | 加载时机 | token消耗 |
+|------|------|----------|-----------|
+| **L0** | me.md（身份、偏好） | 始终 | ~100 |
+| **L1** | core.md（全局索引） | 始终 | ~300 |
+| **L2** | projects/{proj}/* | 话题触发 | ~400 |
+| **L3** | archive/* | 显式搜索 | 不占上下文 |
+
+### 向量存储策略（vs Chroma）
+
+| 方案 | 10K向量占用 | 服务依赖 |
+|------|------------|----------|
+| Chroma | ~936MB | 独立进程 |
+| **SQLite-vec** | **~37MB** | 无，嵌入 SQLite |
+
+**关键**：SQLite-vec 是 SQLite 扩展，在进程内运行，不需独立服务。
+
+### 感知压缩（200行硬上限）
+
+```markdown
+---
+salience: 0.85
+last_access: 2026-05-07
+access_count: 12
+decay_score: 0.92
+type: decision
+---
+# 决策：向量架构选型
+
+<!-- 正文超过200行时强制摘要合并 -->
+```
+
+当 `access_count` 超过阈值或 `decay_score` 低于阈值时，自动归档到 L3。
+
+## 实施步骤
+
+### 1. 安装 sqlite-vec
+
+```powershell
+pip install sqlite-vec
+```
+
+### 2. 重写记忆文件结构
+
+将现有 `D:\CLAUDE.MD\memory\` 改造为：
+- `me.md` → L0 身份（已有，保持）
+- `core.md` → L1 核心（已有，增加 frontmatter 元数据）
+- 新建 `projects/` → L2 项目记忆
+- 新建 `archive/` → L3 归档
+- 新建 `corpora/memory.vec` → SQLite-vec 向量库
+
+### 3. 创建向量索引 MCP 工具
+
+编写 Python 脚本作为 MCP server：
+- 读取 Markdown frontmatter
+- 生成 embedding（用本地模型如 sentence-transformers 或直接用关键词 hash）
+- 存入 sqlite-vec
+- 提供 `memory_search(query)` 工具
+
+### 4. 配置 CLAUDE.md hooks
+
+```json
+{
+  "hooks": {
+    "SessionStart": ["memory_load"],
+    "Stop": ["memory_save", "memory_compact"]
+  }
+}
+```
+
+### 5. 验证
+
+1. 新会话能加载 L0+L1（~400 tokens）
+2. 问"上次我们讨论过什么"，向量搜索返回相关记忆
+3. corpora/memory.vec 文件 < 50MB
+4. 无外部 Chroma 服务依赖
+
+## 关键文件
+
+| 文件 | 作用 |
+|------|------|
+| `D:\CLAUDE.MD\memory\me.md` | L0 身份 |
+| `D:\CLAUDE.MD\memory\core.md` | L1 核心 + 索引 |
+| `D:\CLAUDE.MD\memory\projects\{proj}\*` | L2 项目记忆 |
+| `D:\CLAUDE.MD\memory\archive\*` | L3 归档 |
+| `D:\CLAUDE.MD\corpora\memory.vec` | SQLite-vec 向量库 |
+| `D:\CLAUDE.MD\plugins\marketplaces\thedotmack\` | 卸载 claude-mem |
+
+## 优点
+
+1. **极小空间**：SQLite-vec 37MB vs Chroma 936MB（10K向量）
+2. **无外部依赖**：sqlite-vec 是 Python 库，不需独立服务
+3. **Markdown 可读**：人类可直接编辑、备份、版本控制
+4. **按需加载**：上下文永远 < 900 tokens
+5. **渐进式遗忘**：decay_score 自动归档低频记忆

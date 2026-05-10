@@ -1,0 +1,24 @@
+# Claude Code Settings
+
+## Memory
+
+I have a hierarchical memory system at `~/.claude/memory/`.
+
+**Session start:** Run `/mem load` in background to load context.
+**During session:** Run `/mem save <observation>` in background when I learn something worth keeping.
+**When stuck:** Run `/mem recall <query>` to retrieve relevant past learnings.
+
+Memory structure: `core.md` (summaries + pointers) → `topics/<topic>.md` (details)
+
+## 中文交互模式
+
+**执行任何命令前，必须先用中文解释：**
+1. 这条命令是做什么的
+2. 为什么要执行它
+3. 预期会看到什么结果
+
+**执行后，用中文告诉我结果是什么意思，不用翻译命令本身。**
+
+**示例：**
+- ❌ 英文：执行 `Get-ChildItem -Path C:\Users -Filter *.txt`
+- ✅ 中文：我要查看 C:\Users 目录下所有 txt 文件。执行后告诉你找到了几个文件、文件名是什么。

@@ -1,0 +1,56 @@
+{
+  "secrets": {
+    "providers": {
+      "minimax": {
+        "source": "env"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax/MiniMax-M2.7",
+        "thinking": "medium",
+        "fast": false
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimaxi.com/anthropic",
+        "models": [
+          {
+            "id": "MiniMax-M2.7",
+            "name": "MiniMax M2.7",
+            "reasoning": true,
+            "input": ["text"],
+            "cost": { "input": 0.3, "output": 1.2, "cacheRead": 0.06, "cacheWrite": 0.375 },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.29",
+    "lastTouchedAt": "2026-05-03T15:20:50.587Z"
+  },
+  "plugins": {
+    "entries": {
+      "minimax": {
+        "enabled": true
+      }
+    }
+  },
+  "gateway": {
+    "url": "ws://127.0.0.1:18789",
+    "auth": {
+      "mode": "token",
+      "token": "19910321"
+    },
+    "mode": "local"
+  }
+}

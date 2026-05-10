@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "subject": "改造记忆目录结构",
+  "description": "新建 session/, projects/, archive/ 目录；改造 me.md 和 core.md 加 frontmatter",
+  "activeForm": "改造记忆目录结构",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

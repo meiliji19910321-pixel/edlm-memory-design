@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "plugins": {
+    "claude-mem@thedotmack": [
+      {
+        "scope": "user",
+        "installPath": "D:\\CLAUDE.MD\\plugins\\cache\\thedotmack\\claude-mem\\12.6.5",
+        "version": "12.6.5",
+        "installedAt": "2026-05-06T02:41:57.271Z",
+        "lastUpdated": "2026-05-06T02:41:57.271Z"
+      }
+    ]
+  }
+}

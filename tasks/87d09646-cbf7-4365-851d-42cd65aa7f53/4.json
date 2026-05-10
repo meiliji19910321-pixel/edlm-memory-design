@@ -1,0 +1,9 @@
+{
+  "id": "4",
+  "subject": "验证记忆功能",
+  "description": "启动 embed-server，新会话验证 Briefing 加载、向量搜索、衰减归档",
+  "activeForm": "验证记忆功能",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

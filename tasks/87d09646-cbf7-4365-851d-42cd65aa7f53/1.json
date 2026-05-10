@@ -1,0 +1,9 @@
+{
+  "id": "1",
+  "subject": "安装 palaia 并初始化记忆库",
+  "description": "pip install palaia，初始化 SQLite 向量库到 D:\\CLAUDE.MD\\corpora\\",
+  "activeForm": "安装 mempalace-node",
+  "status": "in_progress",
+  "blocks": [],
+  "blockedBy": []
+}

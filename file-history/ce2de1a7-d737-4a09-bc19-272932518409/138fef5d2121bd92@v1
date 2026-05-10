@@ -1,0 +1,13 @@
+{
+  "secrets": {
+    "providers": {
+      "minimax": {
+        "source": "env"
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.4.29",
+    "lastTouchedAt": "2026-05-03T14:27:26.868Z"
+  }
+}

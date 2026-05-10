@@ -1,0 +1,60 @@
+{
+  "secrets": {
+    "providers": {
+      "minimax": {
+        "source": "env"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "minimax/MiniMax-M2.7"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "minimax": {
+        "baseUrl": "https://api.minimax.io/anthropic",
+        "models": []
+      }
+    }
+  },
+  "meta": {
+    "lastTouchedVersion": "2026.5.2",
+    "lastTouchedAt": "2026-05-05T08:30:01.563Z"
+  },
+  "plugins": {
+    "entries": {
+      "minimax": {
+        "enabled": true
+      },
+      "memory-core": {
+        "config": {
+          "dreaming": {
+            "enabled": true
+          }
+        },
+        "enabled": true
+      }
+    }
+  },
+  "gateway": {
+    "auth": {
+      "mode": "token",
+      "token": "dad179135011d4aeb12ee2123fb4afa68af04ef7e985bebd"
+    }
+  },
+  "skills": {
+    "entries": {
+      "things-mac": {
+        "enabled": false
+      },
+      "apple-notes": {
+        "enabled": false
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "decay_lambda": 0.1,
+  "hot_threshold_days": 7,
+  "warm_threshold_days": 30,
+  "hot_max_entries": 50,
+  "hot_min_score": 0.5,
+  "warm_min_score": 0.1,
+  "default_scope": "team",
+  "wal_retention_days": 7,
+  "lock_timeout_seconds": 5,
+  "embedding_provider": "auto",
+  "embedding_model": "",
+  "store_version": "2.7.3",
+  "max_entries_per_tier": null,
+  "max_total_chars": null,
+  "gc_type_weights": {
+    "process": 2.0,
+    "task": 1.5,
+    "memory": 1.0
+  },
+  "allow_private_urls": false,
+  "database_backend": "auto",
+  "database_url": null,
+  "embedding_chain": [
+    "fastembed",
+    "bm25"
+  ],
+  "embedding_models": {},
+  "store_mode": "shared",
+  "multi_agent": false,
+  "agent": "default",
+  "aliases": {},
+  "migration_acknowledged": false,
+  "last_gc": null,
+  "embed_server_auto_start": true,
+  "embed_server_idle_timeout": 1800,
+  "plugin_config": {},
+  "workspace_id": null
+}

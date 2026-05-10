@@ -1,0 +1,42 @@
+# Claude Code Settings
+
+## 数据存储位置
+
+Claude Code 所有数据存储在 `D:\CLAUDE.MD\` 目录：
+
+- **记忆系统**: `D:\CLAUDE.MD\memory\`
+- **会话数据**: `D:\CLAUDE.MD\sessions\`
+- **项目数据**: `D:\CLAUDE.MD\projects\`
+- **Skills**: `D:\CLAUDE.MD\skills\`
+- **Commands**: `D:\CLAUDE.MD\commands\`
+- **Hooks**: `D:\CLAUDE.MD\hooks\`
+
+## 工作空间
+
+默认工作空间为 D:\ 盘，所有项目都在 D:\ 下进行，不占用 C 盘系统空间。
+
+## Memory
+
+层级记忆系统位于 `D:\CLAUDE.MD\memory\`：
+
+- **me.md** — 用户信息（每次会话自动加载）
+- **core.md** — 核心摘要 + 主题指针
+- **topics/** — 各领域详细记忆
+
+**会话流程：**
+1. Session start: 后台运行 `/mem load` 加载上下文
+2. During session: 用 `/mem save <observation>` 保存重要信息
+3. When stuck: 用 `/mem recall <query>` 检索相关记忆
+
+## 中文交互模式
+
+**执行任何命令前，必须先用中文解释：**
+1. 这条命令是做什么的
+2. 为什么要执行它
+3. 预期会看到什么结果
+
+**执行后，用中文告诉我结果是什么意思，不用翻译命令本身。**
+
+**示例：**
+- ❌ 英文：执行 `Get-ChildItem -Path C:\Users -Filter *.txt`
+- ✅ 中文：我要查看 C:\Users 目录下所有 txt 文件。执行后告诉你找到了几个文件、文件名是什么。

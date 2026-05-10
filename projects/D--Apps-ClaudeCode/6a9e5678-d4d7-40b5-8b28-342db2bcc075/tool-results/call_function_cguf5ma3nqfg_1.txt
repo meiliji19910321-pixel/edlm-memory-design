@@ -1,0 +1,252 @@
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:3:  <a href="https://github.com/thedotmack/claude-mem">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:5:      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/claude-mem-logo-for-dark-mode.webp">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:6:      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/claude-mem-logo-for-light-mode.webp">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:7:      <img src="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/claude-mem-logo-for-light-mode.webp" alt="Claude-Mem" width="400">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:68:      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/trendshift-badge-dark.svg">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:69:      <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/trendshift-badge.svg">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:70:      <img src="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/trendshift-badge.svg" alt="thedotmack/claude-mem | Trendshift" width="250" height="55"/>
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:80:      <a href="https://github.com/thedotmack/claude-mem">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:83:            src="https://raw.githubusercontent.com/thedotmack/claude-mem/main/docs/public/cm-preview.gif"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:91:      <a href="https://www.star-history.com/#thedotmack/claude-mem&Date">
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:95:            srcset="https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&theme=dark&legend=top-left"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:99:            srcset="https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&legend=top-left"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:103:            src="https://api.star-history.com/image?repos=thedotmack/claude-mem&type=date&legend=top-left"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:133:npx claude-mem install
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:139:npx claude-mem install --ide gemini-cli
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:144:npx claude-mem install --ide opencode
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:150:/plugin marketplace add thedotmack/claude-mem
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:152:/plugin install claude-mem
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:157:> **Note:** Claude-Mem is also published on npm, but `npm install -g claude-mem` installs the **SDK/library only** — it does not register the plugin hooks or set up the worker service. Always install via `npx claude-mem install` or the `/plugin` commands above.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:161:Install claude-mem as a persistent memory plugin on [OpenClaw](https://openclaw.ai) gateways with a single command:
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:167:The installer handles dependencies, plugin setup, AI provider configuration, worker startup, and optional real-time observation feeds to Telegram, Discord, Slack, and more. See the [OpenClaw Integration Guide](https://docs.claude-mem.ai/openclaw-integration) for details.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:186:📚 **[View Full Documentation](https://docs.claude-mem.ai/)** - Browse on official website
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:190:- **[Installation Guide](https://docs.claude-mem.ai/installation)** - Quick start & advanced installation
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:191:- **[Gemini CLI Setup](https://docs.claude-mem.ai/gemini-cli/setup)** - Dedicated guide for Google's Gemini CLI integration
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:192:- **[Usage Guide](https://docs.claude-mem.ai/usage/getting-started)** - How Claude-Mem works automatically
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:193:- **[Search Tools](https://docs.claude-mem.ai/usage/search-tools)** - Query your project history with natural language
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:194:- **[Beta Features](https://docs.claude-mem.ai/beta-features)** - Try experimental features like Endless Mode
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:198:- **[Context Engineering](https://docs.claude-mem.ai/context-engineering)** - AI agent context optimization principles
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:199:- **[Progressive Disclosure](https://docs.claude-mem.ai/progressive-disclosure)** - Philosophy behind Claude-Mem's context priming strategy
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:203:- **[Overview](https://docs.claude-mem.ai/architecture/overview)** - System components & data flow
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:204:- **[Architecture Evolution](https://docs.claude-mem.ai/architecture-evolution)** - The journey from v3 to v5
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:205:- **[Hooks Architecture](https://docs.claude-mem.ai/hooks-architecture)** - How Claude-Mem uses lifecycle hooks
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:206:- **[Hooks Reference](https://docs.claude-mem.ai/architecture/hooks)** - 7 hook scripts explained
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:207:- **[Worker Service](https://docs.claude-mem.ai/architecture/worker-service)** - HTTP API & Bun management
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:208:- **[Database](https://docs.claude-mem.ai/architecture/database)** - SQLite schema & FTS5 search
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:209:- **[Search Architecture](https://docs.claude-mem.ai/architecture/search-architecture)** - Hybrid search with Chroma vector database
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:213:- **[Configuration](https://docs.claude-mem.ai/configuration)** - Environment variables & settings
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:214:- **[Development](https://docs.claude-mem.ai/development)** - Building, testing, contributing
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:215:- **[Troubleshooting](https://docs.claude-mem.ai/troubleshooting)** - Common issues & solutions
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:230:See [Architecture Overview](https://docs.claude-mem.ai/architecture/overview) for details.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:269:See [Search Tools Guide](https://docs.claude-mem.ai/usage/search-tools) for detailed examples.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:277:See **[Beta Features Documentation](https://docs.claude-mem.ai/beta-features)** for details on Endless Mode and how to try it.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:304:Settings are managed in `~/.claude-mem/settings.json` (auto-created with defaults on first run). Configure AI model, worker port, data directory, log level, and context injection settings.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:306:See the **[Configuration Guide](https://docs.claude-mem.ai/configuration)** for all available settings and examples.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:318:Edit your settings file at `~/.claude-mem/settings.json`:
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:351:See the **[Development Guide](https://docs.claude-mem.ai/development)** for build instructions, testing, and contribution workflow.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:359:See the **[Troubleshooting Guide](https://docs.claude-mem.ai/troubleshooting)** for common issues and solutions.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:382:See [Development Guide](https://docs.claude-mem.ai/development) for contribution workflow.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:408:- **Issues**: [GitHub Issues](https://github.com/thedotmack/claude-mem/issues)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\README.md:409:- **Repository**: [github.com/thedotmack/claude-mem](https://github.com/thedotmack/claude-mem)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:2:  "name": "claude-mem",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:22:    "url": "https://github.com/thedotmack/claude-mem.git"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:24:  "homepage": "https://github.com/thedotmack/claude-mem#readme",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:26:    "url": "https://github.com/thedotmack/claude-mem/issues"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:30:    "claude-mem": "./dist/npx-cli/index.js"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:68:    "build:cli-binary": "bun build --compile --minify ./src/services/worker-service.ts --outfile plugin/scripts/claude-mem",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:69:    "worker:logs": "tail -n 50 ~/.claude-mem/logs/worker-$(date +%Y-%m-%d).log",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\package.json:70:    "worker:tail": "tail -f 50 ~/.claude-mem/logs/worker-$(date +%Y-%m-%d).log",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:2:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:88:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:96:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:97:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:116:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:123:The following context is from claude-mem, a persistent memory system that tracks your coding sessions.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:128:*Updated after last session. Use claude-mem's MCP search tools for more detailed queries.*
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:129:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:139:  1. Start claude-mem worker: claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:144:  Context from past sessions is stored in .cursor/rules/claude-mem-context.mdc
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:146:`)}async function vu(e,t){let n=x.join(e,"rules");Xr(n,{recursive:!0});let r=x.basename(t),o=!1;console.log("  Generating initial context...");try{o=await ku(r,t)}catch(s){s instanceof Error?u.debug("WORKER","Worker not running during install",{},s):u.debug("WORKER","Worker not running during install",{},new Error(String(s)))}if(!o){let s=x.join(n,"claude-mem-context.mdc");qr(s,`---
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:155:Use claude-mem's MCP search tools for manual memory queries.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:159:Uninstallation failed: ${c}`),1}}function bu(e,t,n,r,o){for(let s of t){let i=x.join(e,s);ce(i)&&(Zr(i),console.log(`  Removed legacy script: ${s}`))}if(ce(n)&&(Zr(n),console.log("  Removed hooks.json")),r==="project"){let s=x.join(o,"rules","claude-mem-context.mdc");ce(s)&&(Zr(s),console.log("  Removed context file"));let i=x.basename(process.cwd());ki(i),console.log("  Unregistered from auto-context updates")}console.log(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:163:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:167:Usage: claude-mem cursor <command> [options]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:183:  claude-mem cursor install user         # Install globally for user
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:184:  claude-mem cursor uninstall            # Remove from current project
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:185:  claude-mem cursor status               # Check if hooks are installed
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:187:For more info: https://docs.claude-mem.ai/cursor
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:189:`)}function Pu(e,t){let n={...e};n.hooks||(n.hooks={});for(let[r,o]of Object.entries(t)){let s=n.hooks[r]??[];for(let i of o){let a=s.findIndex(c=>c.hooks.some(l=>l.name===Xt));if(a>=0){let c=s[a],l=c.hooks.findIndex(p=>p.name===Xt);l>=0?c.hooks[l]=i.hooks[0]:c.hooks.push(i.hooks[0])}else s.push(i)}n.hooks[r]=s}return n}function Au(){let e="<claude-mem-context>",n=`${e}
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:193:</claude-mem-context>`,r="";if(ut(he)&&(r=Wn(he,"utf-8")),r.includes(e))return;let o=r.length>0&&!r.endsWith(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:208:  1. Start claude-mem worker: claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:218:Uninstallation failed: ${t}`),1}}function Du(e,t){if(Ri(e),console.log(`  Removed ${t} claude-mem hook(s) from ${ee}`),ut(he)){let n=Wn(he,"utf-8"),r=/\n?<claude-mem-context>[\s\S]*?<\/claude-mem-context>\n?/;r.test(n)&&(n=n.replace(r,""),$r(he,n),console.log(`  Removed context section from ${he}`))}console.log(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:223:`),console.log(`No hooks installed. Run: claude-mem install --ide gemini-cli
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:226:`),console.log(`No hooks installed. Run: claude-mem install --ide gemini-cli
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:227:`),0;let t=[];for(let[n,r]of Object.entries(e.hooks))r.some(s=>s.hooks.some(i=>i.name===Xt))&&t.push(n);if(t.length===0)return console.log(`Gemini CLI settings: Found, but no claude-mem hooks
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:228:`),console.log(`Run: claude-mem install --ide gemini-cli
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:229:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:232:Usage: claude-mem gemini-cli <command>
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:236:  uninstall           Remove claude-mem hooks (preserves other hooks)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:240:  claude-mem gemini-cli install     # Install hooks
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:241:  claude-mem gemini-cli status      # Check if installed
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:242:  claude-mem gemini-cli uninstall   # Remove hooks
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:244:For more info: https://docs.claude-mem.ai/usage/gemini-provider
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:245:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:254:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:258:`);let e=Gn(),t=$t(),n=_t();if(console.log(`Config directory: ${e}`),console.log(`  Exists: ${mt(e)?"yes":"no"}`),console.log(""),console.log(`Plugin: ${t}`),console.log(`  Installed: ${mt(t)?"yes":"no"}`),console.log(""),console.log(`Context (AGENTS.md): ${n}`),mt(n)){let o=Di(n,"utf-8").includes(Qt);console.log("  Exists: yes"),console.log(`  Has claude-mem context: ${o?"yes":"no"}`)}else console.log("  Exists: no");return console.log(""),0}async function Xu(){console.log(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:264:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:271:  1. Start claude-mem worker: npx claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:274:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:276:The following context is from claude-mem, a persistent memory system that tracks your coding sessions.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:281:*Auto-updated by claude-mem after each session. Use MCP search tools for detailed queries.*
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:302:  1. Start claude-mem worker: claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:304:  3. Context is injected via .windsurf/rules/claude-mem-context.md (workspace-level)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:305:`)}async function rd(e){let t=zt(),n=le.basename(e),r=!1;console.log("  Generating initial context...");try{r=await od(t,n,e)}catch(o){o instanceof Error?u.debug("WORKER","Worker not running during install",{},o):u.debug("WORKER","Worker not running during install",{},new Error(String(o)))}if(!r){let o=le.join(e,".windsurf","rules");Kn(o,{recursive:!0});let s=le.join(o,"claude-mem-context.md");en(s,`# Memory Context from Past Sessions
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:309:Use claude-mem's MCP search tools for manual memory queries.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:313:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:317:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:318:No hooks installed. Run: claude-mem windsurf install
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:322:Usage: claude-mem windsurf <command>
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:330:  claude-mem windsurf install      # Install hooks globally
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:331:  claude-mem windsurf uninstall    # Remove hooks
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:332:  claude-mem windsurf status       # Check if hooks are installed
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:334:For more info: https://docs.claude-mem.ai/windsurf
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:335:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:336:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:339:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:348:  1. Start claude-mem worker: npx claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:352:`)}function vd(){if(!yo(on))return;let e="<claude-mem-context>",t="</claude-mem-context>";try{kd(e,t)}catch(n){let r=n instanceof Error?n.message:String(n);u.warn("WORKER","Failed to clean AGENTS.md context",{error:r})}}function kd(e,t){let n=Eo(on,"utf-8"),r=n.indexOf(e),o=n.indexOf(t);if(r===-1||o===-1)return;let s=n.substring(0,r).replace(/\n+$/,""),i=n.substring(o+t.length).replace(/^\n+/,""),a=(s+(i?`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:365:  - claude-mem watches Codex session JSONL files for new activity
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:370:  1. Start claude-mem worker: npx claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:376:Uninstallation complete!`),console.log(`Restart claude-mem worker to apply changes.
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:377:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:383:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:384:`))}function Ld(){return ue.join(qn(),".config","goose","config.yaml")}function Wd(e){return e.includes("claude-mem:")&&e.includes("mcpServers:")}function sa(e){return["mcpServers:","  claude-mem:",`    command: ${process.execPath}`,"    args:",`      - ${e}`].join(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:385:`)}function ia(e){return["  claude-mem:",`    command: ${process.execPath}`,"    args:",`      - ${e}`].join(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:389:Installation failed: ${o}`),1}}function jd(e,t){if(aa(e)){let n=xd(e,"utf-8");if(Wd(n)){let r=/( {2}claude-mem:\n(?:.*\n)*?(?= {2}\S|\n\n|^\S|$))/m,o=ia(t)+`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:390:`;if(!r.test(n))throw new Error("Found mcpServers/claude-mem markers but could not locate a replaceable claude-mem block");n=n.replace(r,o),sn(e,n),console.log(`  Updated existing claude-mem entry in: ${e}`)}else if(n.includes("mcpServers:")){let o=n.indexOf("mcpServers:")+11,s=`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:391:`+ia(t);n=n.slice(0,o)+s+n.slice(o),sn(e,n),console.log(`  Added claude-mem to existing mcpServers in: ${e}`)}else{let r=`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:404:  1. Start claude-mem worker: npx claude-mem start
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:406:`)}var Id,Ad,Nd,Dd,Ud,Fd,da=E(()=>{"use strict";qt();kt();oo();Id=`# claude-mem: Cross-Session Memory
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:410:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:411:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:412:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:415:# Added by claude-mem installer for Claude Code
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:417:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:418:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:420:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:421:`),"Next Steps"),f.length>0?Ne(m.default.yellow("claude-mem installed with some IDE setup failures.")):Ne(m.default.green("claude-mem installed successfully!"))):(console.log(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:423:claude-mem installed with some IDE setup failures.`),process.exitCode=1):console.log(`
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:424:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:426:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:427:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:428:${R.default.bold("claude-mem")} v${e} \u2014 persistent memory for AI coding assistants
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:431:  ${R.default.cyan("npx claude-mem")}                     Interactive install
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:432:  ${R.default.cyan("npx claude-mem install")}              Interactive install
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:433:  ${R.default.cyan("npx claude-mem install --ide <id>")}   Install for specific IDE
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:434:  ${R.default.cyan("npx claude-mem install --provider claude|gemini|openrouter")}   Set LLM provider non-interactively
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:435:  ${R.default.cyan("npx claude-mem install --model <id>")}   Set Claude model (when provider=claude)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:436:  ${R.default.cyan("npx claude-mem install --no-auto-start")}   Skip worker auto-start at the end
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:437:  ${R.default.cyan("npx claude-mem repair")}                Repair runtime (re-runs Bun/uv setup and bun install in plugin cache)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:438:  ${R.default.cyan("npx claude-mem update")}               Update to latest version
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:439:  ${R.default.cyan("npx claude-mem uninstall")}            Remove plugin and configs
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:440:  ${R.default.cyan("npx claude-mem version")}              Print version
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:443:  ${R.default.cyan("npx claude-mem start")}                Start worker service
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:444:  ${R.default.cyan("npx claude-mem stop")}                 Stop worker service
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:445:  ${R.default.cyan("npx claude-mem restart")}              Restart worker service
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:446:  ${R.default.cyan("npx claude-mem status")}               Show worker status
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:447:  ${R.default.cyan("npx claude-mem search <query>")}       Search observations
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:448:  ${R.default.cyan("npx claude-mem adopt [--dry-run] [--branch <name>]")}    Stamp merged worktrees into parent project
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:449:  ${R.default.cyan("npx claude-mem cleanup [--dry-run]")}    Run one-time v12.4.3 pollution cleanup (or preview counts)
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:450:  ${R.default.cyan("npx claude-mem transcript watch")}     Start transcript watcher
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\npx-cli\index.js:456:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\.claude-plugin\plugin.json:2:  "name": "claude-mem",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\.claude-plugin\plugin.json:8:  "repository": "https://github.com/thedotmack/claude-mem",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\dist\opencode-plugin\index.js:65:[Omitted long matching line]
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\package.json:2:  "name": "claude-mem-plugin",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\package.json:5:  "description": "Runtime dependencies for claude-mem bundled hooks",
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:319:   │    claude-mem  ×  OpenClaw              │
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:537:    error "The claude-mem plugin requires an OpenClaw gateway to be installed."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:558:CLAUDE_MEM_REPO="https://github.com/thedotmack/claude-mem.git"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:569:        const p = c?.plugins?.installs?.['claude-mem']?.installPath;
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:582:        const p = paths.find(p => p.endsWith('/claude-mem'));
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:591:  echo "${HOME}/.openclaw/extensions/claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:603:    info "Removing existing claude-mem plugin at ${existing_plugin_dir}..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:611:  info "Cloning claude-mem repository (branch: ${CLAUDE_MEM_BRANCH})..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:612:  if ! git clone --depth 1 --branch "$CLAUDE_MEM_BRANCH" "$CLAUDE_MEM_REPO" "$build_dir/claude-mem" 2>&1; then
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:613:    error "Failed to clone claude-mem repository"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:618:  local plugin_src="${build_dir}/claude-mem/openclaw"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:622:    error "Failed to build the claude-mem OpenClaw plugin"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:627:  local installable_dir="${build_dir}/claude-mem-installable"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:636:      name: 'claude-mem',
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:652:      const entry = config?.plugins?.entries?.['claude-mem'];
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:653:      const allowHasClaudeMem = Array.isArray(config?.plugins?.allow) && config.plugins.allow.includes('claude-mem');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:654:      if (entry || config?.plugins?.slots?.memory === 'claude-mem' || allowHasClaudeMem) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:658:        if (entry) delete config.plugins.entries['claude-mem'];
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:661:          config.plugins.allow = config.plugins.allow.filter((x) => x !== 'claude-mem');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:665:        if (config?.plugins?.slots?.memory === 'claude-mem') {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:673:  info "Installing claude-mem plugin into OpenClaw..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:675:    error "Failed to install claude-mem plugin"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:680:  info "Enabling claude-mem plugin..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:681:  if ! run_openclaw plugins enable claude-mem 2>&1; then
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:682:    error "Failed to enable claude-mem plugin"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:683:    error "Try manually: ${OPENCLAW_PATH} plugins enable claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:694:      if (!config.plugins.allow.includes('claude-mem')) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:695:        config.plugins.allow.push('claude-mem');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:697:        console.log('Added claude-mem to plugins.allow');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:699:        console.log('claude-mem already in plugins.allow');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:702:      warn "Failed to write plugins.allow — claude-mem may need manual allowlisting"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:713:        if (!config.plugins.allow.includes('claude-mem')) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:714:          config.plugins.allow.push('claude-mem');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:716:          console.log('Added claude-mem to plugins.allow (post-materialization)');
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:731:      if (config?.plugins?.entries?.['claude-mem']) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:732:        config.plugins.entries['claude-mem'].config = savedConfig;
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:738:  success "claude-mem plugin installed and enabled"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:741:  local repo_root="${build_dir}/claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:773:    info "Creating OpenClaw configuration with claude-mem memory slot..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:777:          slots: { memory: 'claude-mem' },
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:779:            'claude-mem': {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:791:    success "Created ${config_file} with memory slot set to claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:795:  info "Updating OpenClaw configuration to use claude-mem memory slot..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:807:    // Set memory slot to claude-mem
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:808:    config.plugins.slots.memory = 'claude-mem';
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:810:    // Ensure claude-mem entry exists and is enabled
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:811:    if (!config.plugins.entries['claude-mem']) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:812:      config.plugins.entries['claude-mem'] = {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:820:      config.plugins.entries['claude-mem'].enabled = true;
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:823:      for (const key of Object.keys(config.plugins.entries['claude-mem'])) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:825:          delete config.plugins.entries['claude-mem'][key];
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:833:  success "Memory slot set to claude-mem in ${config_file}"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:871:          warn "Selected via --provider: Gemini (no API key — add later in ~/.claude-mem/settings.json)"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:880:          warn "Selected via --provider: OpenRouter (no API key — add later in ~/.claude-mem/settings.json)"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:898:  echo -e "  Choose your AI provider for claude-mem:"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:929:          warn "No API key provided — you can add it later in ~/.claude-mem/settings.json"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:942:          warn "No API key provided — you can add it later in ~/.claude-mem/settings.json"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:956:  local settings_dir="${HOME}/.claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:987:      CLAUDE_MEM_OPENROUTER_APP_NAME: 'claude-mem',
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:990:      CLAUDE_MEM_DATA_DIR: path.join(homedir, '.claude-mem'),
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1057:    "${HOME}/.openclaw/extensions/claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1059:    "${HOME}/.openclaw/plugins/claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1097:  info "Starting claude-mem worker service..."
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1100:    error "Cannot find claude-mem plugin installation directory"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1102:    error "  ~/.openclaw/extensions/claude-mem/plugin/scripts/"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1110:  local log_dir="${HOME}/.claude-mem/logs"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1128:  local pid_file="${HOME}/.claude-mem/worker.pid"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1129:  mkdir -p "${HOME}/.claude-mem"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1178:    warn "  Or check logs: ~/.claude-mem/logs/"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1211:  echo "  claude-mem can stream AI-compressed observations to a messaging"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1219:    info "  plugins.entries.claude-mem.config.observationFeed"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1233:    info "  plugins.entries.claude-mem.config.observationFeed"
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1345:      .plugins.entries["claude-mem"] //= {"enabled": true, "config": {}} |
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1346:      .plugins.entries["claude-mem"].config //= {} |
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1347:      .plugins.entries["claude-mem"].config.observationFeed = {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1368:config['plugins']['entries'].setdefault('claude-mem', {'enabled': True, 'config': {}})
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1369:config['plugins']['entries']['claude-mem'].setdefault('config', {})
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1370:config['plugins']['entries']['claude-mem']['config']['observationFeed'] = {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1393:      if (!config.plugins.entries['claude-mem']) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1394:        config.plugins.entries['claude-mem'] = { enabled: true, config: {} };
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1396:      if (!config.plugins.entries['claude-mem'].config) {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1397:        config.plugins.entries['claude-mem'].config = {};
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1400:      config.plugins.entries['claude-mem'].config.observationFeed = {
+D:\CLAUDE.MD\plugins\marketplaces\thedotmack\openclaw\install.sh:1419:  echo "  [claude-mem] Observation feed starting — channel: ${FEED_CHANNEL}, target: ${FEED_TARGET_ID}"
+
+[Showing results with pagination = limit: 250]

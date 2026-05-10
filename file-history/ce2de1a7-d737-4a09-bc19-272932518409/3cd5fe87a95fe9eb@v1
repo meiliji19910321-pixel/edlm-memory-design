@@ -1,0 +1,3 @@
+@echo off
+node D:\OpenClaw\node_modules\openclaw\dist\index.js %*
+pause

@@ -1,0 +1,500 @@
+<!DOCTYPE html><html lang="en" class="__variable_ed9089 __variable_ea4744 dark" data-banner-state="visible" data-assistant-state="closed" data-page-mode="none" data-current-path="/"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/><link rel="preload" href="/docs/_next/static/media/bb3ef058b751a6ad-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/docs/_next/static/media/c4b700dcb2187787-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" href="/docs/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"/><link rel="preload" as="image" href="https://mintcdn.com/claude-code/c5r9_6tjPMzFdDDT/logo/light.svg?fit=max&amp;auto=format&amp;n=c5r9_6tjPMzFdDDT&amp;q=85&amp;s=78fd01ff4f4340295a4f66e2ea54903c"/><link rel="preload" as="image" href="https://mintcdn.com/claude-code/c5r9_6tjPMzFdDDT/logo/dark.svg?fit=max&amp;auto=format&amp;n=c5r9_6tjPMzFdDDT&amp;q=85&amp;s=1298a0c3b3a1da603b190d0de0e31712"/><link rel="preload" as="image" href="https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg"/><link rel="stylesheet" href="/docs/_next/static/css/2b0e6d1f6a2b7a1a.css?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" data-precedence="next"/><link rel="stylesheet" href="/docs/_next/static/css/93bac6dd9c729729.css?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" data-precedence="next"/><link rel="stylesheet" href="/docs/_next/static/css/05d6d8fcb903870d.css?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" data-precedence="next"/><link rel="preload" as="script" fetchPriority="low" href="/docs/_next/static/chunks/webpack-dc2320dc29fbd638.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb"/><script src="/docs/_next/static/chunks/87c73c54-09e1ba5c70e60a51.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/90018-5ab199940aea98d4.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/main-app-76ddd9525ef90e67.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/891cff7f-38ce37d594f7da31.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/51288-0fb44d6be82e9af5.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/14079-4865f1ab1b5bbf4b.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/78238-22782f5aac7a6ef4.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/95115-7f3830b22524c9f1.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/93247-b07c7244bb0ac0f8.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/98816-4875194b6205382d.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/80239-ce217fc534a5bb94.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/19664-8ce43df6b74bea12.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/8685-3edaeb533c1369b7.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/55016-27578b486608c312.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/75862-0e7c90644ebfd048.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/71251-28f76702905f8b9a.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/error-904203083e579f01.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/db261188-d8199d2c7818f473.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/d30757c7-4504080d72b51329.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/50867-b9f0047192ea1561.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/37154-f1541a8c0dc3fc4f.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/96613-d9098930227907bd.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/66220-dc719718f3803595.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/74902-aede07e132d9c71f.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/68789-aa7dbc2fe57d93b1.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/24253-97a943a955ad7b14.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/67313-113d94c737a76db1.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/73205-1667aa76af26a306.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/20660-8c2743f8a47ba084.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/21749-3ca479933d49c653.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/3433-882017849d90a548.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/%255Fsites/%5Bsubdomain%5D/(multitenant)/layout-4c0943b42989c54c.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/3351-f655818da0318398.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/%255Fsites/%5Bsubdomain%5D/not-found-1c8d41b8e0250ec9.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/60002-3acda5c22a18dc9a.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/layout-0f2ce06cc5f3e229.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/%255Fsites/%5Bsubdomain%5D/error-b4aabeed68299375.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/881-be1f5ebf6e52da59.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/%255Fsites/%5Bsubdomain%5D/(multitenant)/%5B%5B...slug%5D%5D/page-aacd5811fc3c90d2.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/%255Fsites/%5Bsubdomain%5D/(multitenant)/not-found-dca22644b5cda74c.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/8923-bf6bf01a29afab7f.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><script src="/docs/_next/static/chunks/app/%255Fsites/%5Bsubdomain%5D/(multitenant)/%40topbar/%5B%5B...slug%5D%5D/page-6812930c7edb541b.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" async=""></script><meta name="next-size-adjust" content=""/><title>Advanced setup - Claude Code Docs</title><meta name="description" content="System requirements, platform-specific installation, version management, and uninstallation for Claude Code."/><meta name="application-name" content="Claude Code Docs"/><meta name="generator" content="Mintlify"/><meta name="msapplication-config" content="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/browserconfig.xml"/><meta name="apple-mobile-web-app-title" content="Claude Code Docs"/><meta name="msapplication-TileColor" content="#0E0E0E"/><meta name="charset" content="utf-8"/><meta name="og:site_name" content="Claude Code Docs"/><meta name="canonical" content="https://code.claude.com/docs/en/setup"/><link rel="canonical" href="https://code.claude.com/docs/en/setup"/><link rel="alternate" type="application/xml" href="/docs/sitemap.xml"/><meta property="og:title" content="Advanced setup - Claude Code Docs"/><meta property="og:description" content="System requirements, platform-specific installation, version management, and uninstallation for Claude Code."/><meta property="og:url" content="https://code.claude.com/docs/en/setup"/><meta property="og:image" content="https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DSetup%2Band%2Baccess%26appearance%3Dsystem%26title%3DAdvanced%2Bsetup%26description%3DSystem%2Brequirements%252C%2Bplatform-specific%2Binstallation%252C%2Bversion%2Bmanagement%252C%2Band%2Buninstallation%2Bfor%2BClaude%2BCode.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D78fd01ff4f4340295a4f66e2ea54903c%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D1298a0c3b3a1da603b190d0de0e31712%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Advanced setup - Claude Code Docs"/><meta name="twitter:description" content="System requirements, platform-specific installation, version management, and uninstallation for Claude Code."/><meta name="twitter:image" content="https://claude-code.mintlify.app/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DSetup%2Band%2Baccess%26appearance%3Dsystem%26title%3DAdvanced%2Bsetup%26description%3DSystem%2Brequirements%252C%2Bplatform-specific%2Binstallation%252C%2Bversion%2Bmanagement%252C%2Band%2Buninstallation%2Bfor%2BClaude%2BCode.%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Flight.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D78fd01ff4f4340295a4f66e2ea54903c%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fclaude-code%252Fc5r9_6tjPMzFdDDT%252Flogo%252Fdark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253Dc5r9_6tjPMzFdDDT%2526q%253D85%2526s%253D1298a0c3b3a1da603b190d0de0e31712%26primaryColor%3D%25230E0E0E%26lightColor%3D%2523D4A27F%26darkColor%3D%25230E0E0E%26backgroundLight%3D%2523FDFDF7%26backgroundDark%3D%252309090B&amp;w=1200&amp;q=100"/><meta name="twitter:image:width" content="1200"/><meta name="twitter:image:height" content="630"/><link rel="apple-touch-icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/apple-touch-icon.png" type="image/png" sizes="180x180"/><link rel="icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/favicon-16x16.png" type="image/png" sizes="16x16" media="(prefers-color-scheme: light)"/><link rel="icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/favicon-32x32.png" type="image/png" sizes="32x32" media="(prefers-color-scheme: light)"/><link rel="shortcut icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: light)"/><link rel="icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon-dark/favicon-16x16.png" type="image/png" sizes="16x16" media="(prefers-color-scheme: dark)"/><link rel="icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon-dark/favicon-32x32.png" type="image/png" sizes="32x32" media="(prefers-color-scheme: dark)"/><link rel="shortcut icon" href="/docs/_mintlify/favicons/claude-code/pLsy-mRpNksna2sx/_generated/favicon-dark/favicon.ico" type="image/x-icon" media="(prefers-color-scheme: dark)"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"/><link rel="preload" href="https://d4tuoctqmanu0.cloudfront.net/katex.min.css" as="style"/><script type="text/javascript">!function(){var b="/docs";
+function a(p){if(p==null)return"/";p=""+p;if(""===p)return"/";return"/"===p.charAt(0)?p:"/"+p}
+function u(p){if(p==null)return p;p=""+p;if(!p||p.charAt(p.length-1)==="/")return p.slice(0,-1);return p}
+function i(p){if(p==null)return p;p=""+p;if(6<=p.length&&p.substring(p.length-6)==="/index")return p.substring(0,p.length-6);if("index"===p)return"";return p}
+var p=(location.pathname||"").split("?")[0].split("#")[0]||"";
+if(b)if(p===b)p="";else if(0===p.indexOf(b+"/"))p=p.substring(b.length);
+p=a(p);p=u(p);p=i(p);p=""===p||"index"===p?"/":a(p);
+document.documentElement.setAttribute("data-current-path",p);
+}();</script><script type="text/javascript">(function(a,b){try{let c=document.getElementById("banner")?.innerText;if(c){for(let d=0;d<localStorage.length;d++){let e=localStorage.key(d);if(e?.endsWith(a)&&localStorage.getItem(e)===c)return void document.documentElement.setAttribute(b,"hidden")}document.documentElement.setAttribute(b,"visible");return}for(let c=0;c<localStorage.length;c++){let d=localStorage.key(c);if(d?.endsWith(a)&&localStorage.getItem(d))return void document.documentElement.setAttribute(b,"hidden")}document.documentElement.setAttribute(b,"visible")}catch(a){document.documentElement.setAttribute(b,"hidden")}})(
+  "bannerDismissed",
+  "data-banner-state",
+)</script><script src="/docs/_next/static/chunks/polyfills-42372ed130431b0a.js?dpl=dpl_7gnZoEMjFCZYL7iPvAjDLHTtALhb" noModule=""></script></head><body><div hidden=""><!--$--><!--/$--></div><script>((a,b,c,d,e,f,g,h)=>{let i=document.documentElement,j=["light","dark"];function k(b){var c;(Array.isArray(a)?a:[a]).forEach(a=>{let c="class"===a,d=c&&f?e.map(a=>f[a]||a):e;c?(i.classList.remove(...d),i.classList.add(f&&f[b]?f[b]:b)):i.setAttribute(a,b)}),c=b,h&&j.includes(c)&&(i.style.colorScheme=c)}if(d)k(d);else try{let a=localStorage.getItem(b)||c,d=g&&"system"===a?window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light":a;k(d)}catch(a){}})("class","isDarkMode","system",null,["dark","light","true","false","system"],{"true":"dark","false":"light","dark":"dark","light":"light"},true,false)</script><style>:root{--banner-height:0px!important}</style><script>(self.__next_s=self.__next_s||[]).push([0,{"children":"(function j(a,b,c,d,e){try{let f,g,h=[];try{h=window.location.pathname.split(\"/\").filter(a=>\"\"!==a&&\"global\"!==a).slice(0,2)}catch{h=[]}let i=h.find(a=>c.includes(a)),j=[];for(let c of(i?j.push(i):j.push(b),j.push(\"global\"),j)){if(!c)continue;let b=a[c];if(b?.content){f=b.content,g=c;break}}if(!f)return void document.documentElement.setAttribute(d,\"hidden\");let k=!0,l=0;for(;l<localStorage.length;){let a=localStorage.key(l);if(l++,!a?.endsWith(e))continue;let b=localStorage.getItem(a);if(b&&b===f){k=!1;break}g&&(a.startsWith(`lang:${g}_`)||!a.startsWith(\"lang:\"))&&(localStorage.removeItem(a),l--)}document.documentElement.setAttribute(d,k?\"visible\":\"hidden\")}catch(a){console.error(a),document.documentElement.setAttribute(d,\"hidden\")}})(\n  {},\n  \"en\",\n  [\"en\",\"fr\",\"de\",\"it\",\"jp\",\"es\",\"ko\",\"cn\",\"zh-Hant\",\"ru\",\"id\",\"pt-BR\"],\n  \"data-banner-state\",\n  \"bannerDismissed\",\n)","id":"_mintlify-banner-script"}])</script><link href="https://fonts.googleapis.com/css2?family=Anthropic+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Anthropic+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&amp;display=swap" rel="stylesheet"/><style>:root {
+  --font-family-headings-custom: "Anthropic Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  
+  --font-family-body-custom: "Anthropic Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  
+  
+}
+</style><style>:root {
+    --primary: 14 14 14;
+    --primary-light: 212 162 127;
+    --primary-dark: 14 14 14;
+    --tooltip-foreground: 255 255 255;
+    --background-light: 253 253 247;
+    --background-dark: 9 9 11;
+    --gray-50: 243 243 243;
+    --gray-100: 238 238 238;
+    --gray-200: 222 222 222;
+    --gray-300: 206 206 206;
+    --gray-400: 158 158 158;
+    --gray-500: 112 112 112;
+    --gray-600: 80 80 80;
+    --gray-700: 62 62 62;
+    --gray-800: 37 37 37;
+    --gray-900: 23 23 23;
+    --gray-950: 10 10 10;
+  }</style><script type="text/javascript">
+          (function() {
+            function loadKatex() {
+              const link = document.querySelector('link[href="https://d4tuoctqmanu0.cloudfront.net/katex.min.css"]');
+              if (link) link.rel = 'stylesheet';
+            }
+            if (document.readyState === 'loading') {
+              document.addEventListener('DOMContentLoaded', loadKatex);
+            } else {
+              loadKatex();
+            }
+          })();
+        </script><div class="relative antialiased text-gray-500 dark:text-gray-400"><script>(self.__next_s=self.__next_s||[]).push([0,{"suppressHydrationWarning":true,"children":"(function(a,b,c,d){var e;let f,g=\"mint\"===d||\"linden\"===d?\"sidebar\":\"sidebar-content\",h=(e=d,f=\"navbar-transition\",\"maple\"===e&&(f+=\"-maple\"),f),[i,j]=(()=>{switch(d){case\"almond\":return[\"[--scroll-mt:2.5rem]\",\"[--scroll-mt:2.5rem]\"];case\"luma\":return[\"lg:[--scroll-mt:6rem]\",\"lg:[--scroll-mt:6rem]\"];case\"sequoia\":return[\"lg:[--scroll-mt:8.5rem]\",\"lg:[--scroll-mt:11rem]\"];default:return[\"lg:[--scroll-mt:9.5rem]\",\"lg:[--scroll-mt:12rem]\"]}})();function k(){document.documentElement.classList.add(i)}let l=document.documentElement.getAttribute(\"data-banner-state\"),m=null!=l?\"visible\"===l:b;function n(a){let b=m?`calc(${a-2.5}rem + var(--banner-height, 2.5rem))`:`${a}rem`;document.getElementById(g)?.style.setProperty(\"top\",b)}function o(a){let b=m?`calc(100vh - ${a-2.5}rem - var(--banner-height, 2.5rem))`:`calc(100vh - ${a}rem)`;document.getElementById(g)?.style.setProperty(\"height\",b)}function p(a,b){!a&&b||a&&!b?(k(),document.documentElement.classList.remove(j)):a&&b&&(document.documentElement.classList.add(j),document.documentElement.classList.remove(i))}switch(d){case\"mint\":n(c),p(a,m);break;case\"palm\":case\"aspen\":case\"sequoia\":n(c),o(c),p(a,m);break;case\"luma\":k();break;case\"linden\":n(c),m&&k();break;case\"almond\":k(),n(c),o(c)}let q=function(){let a=document.createElement(\"style\");return a.appendChild(document.createTextNode(\"*,*::before,*::after{-webkit-transition:none!important;-moz-transition:none!important;-o-transition:none!important;-ms-transition:none!important;transition:none!important}\")),document.head.appendChild(a),function(){window.getComputedStyle(document.body),setTimeout(()=>{document.head.removeChild(a)},1)}}();(\"requestAnimationFrame\"in globalThis?requestAnimationFrame:setTimeout)(()=>{let a;a=!1,a=window.scrollY>50,document.getElementById(h)?.setAttribute(\"data-is-opaque\",`${!!a}`),q()})})(\n  true,\n  false,\n  (function m(a,b,c){let d=document.documentElement.getAttribute(\"data-banner-state\"),e=2.5*!!(null!=d?\"visible\"===d:b),f=3*!!a,g=4,h=e+g+f;switch(c){case\"mint\":case\"palm\":break;case\"aspen\":f=2.5*!!a,g=3.5,h=e+f+g;break;case\"luma\":g=3,h=e+g;break;case\"linden\":g=4,h=e+g;break;case\"almond\":g=3.5,h=e+g;break;case\"sequoia\":f=3*!!a,g=3,h=e+g+f}return h})(true, false, \"mint\"),\n  \"mint\",\n)","id":"_mintlify-scroll-top-script"}])</script><a href="#content-area" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-50 focus:p-2 focus:text-sm focus:bg-background-light dark:focus:bg-background-dark focus:rounded-md focus:outline-primary dark:focus:outline-primary-light">Skip to main content</a><script>(function j(a,b,c,d){try{if(window.matchMedia("(max-width: 1024px)").matches||!d){document.documentElement.style.setProperty(c,"0px"),document.documentElement.setAttribute("data-assistant-state","closed"),d||localStorage.setItem(a,"false");return}let e=localStorage.getItem(a);if(null===e){document.documentElement.style.setProperty(c,"0px"),document.documentElement.setAttribute("data-assistant-state","closed");return}let f=JSON.parse(e),g=localStorage.getItem(b),h=null!==g?JSON.parse(g):368;document.documentElement.style.setProperty(c,f?h+"px":"0px"),document.documentElement.setAttribute("data-assistant-state",f?"open":"closed")}catch(a){document.documentElement.style.setProperty(c,"0px"),document.documentElement.setAttribute("data-assistant-state","closed")}})(
+    "chat-assistant-sheet-open",
+    "chat-assistant-sheet-width",
+    "--assistant-sheet-width",
+    true
+  )</script><div class="max-lg:contents lg:flex lg:w-full" data-docs-theme="mint"><div class="max-lg:contents lg:flex-1 lg:min-w-0 lg:overflow-x-clip"><div id="navbar" class="z-30 fixed lg:sticky top-0 w-full peer is-not-custom peer is-not-center peer is-not-wide peer is-not-frame"><div id="navbar-transition" class="absolute w-full h-full backdrop-blur flex-none transition-colors duration-500 border-b border-gray-500/5 dark:border-gray-300/[0.06] data-[is-opaque=true]:bg-background-light data-[is-opaque=true]:supports-backdrop-blur:bg-background-light/95 data-[is-opaque=true]:dark:bg-background-dark/75 data-[is-opaque=false]:supports-backdrop-blur:bg-background-light/60 data-[is-opaque=false]:dark:bg-transparent" data-is-opaque="false"></div><div class="max-w-8xl mx-auto relative"><div><div class="relative"><div class="flex items-center lg:px-12 h-16 min-w-0 mx-4 lg:mx-0"><div class="h-full relative flex-1 flex items-center gap-x-4 min-w-0 border-b border-gray-500/5 dark:border-gray-300/[0.06]"><div class="flex-1 flex items-center gap-x-4"><a class="select-none" data-state="closed" data-slot="context-menu-trigger" style="-webkit-touch-callout:none" href="/docs/en/overview"><span class="sr-only">Claude Code Docs<!-- --> home page</span><img class="nav-logo w-auto h-7 relative object-contain shrink-0 block dark:hidden" src="https://mintcdn.com/claude-code/c5r9_6tjPMzFdDDT/logo/light.svg?fit=max&amp;auto=format&amp;n=c5r9_6tjPMzFdDDT&amp;q=85&amp;s=78fd01ff4f4340295a4f66e2ea54903c" alt="light logo"/><img class="nav-logo w-auto h-7 relative object-contain shrink-0 hidden dark:block" src="https://mintcdn.com/claude-code/c5r9_6tjPMzFdDDT/logo/dark.svg?fit=max&amp;auto=format&amp;n=c5r9_6tjPMzFdDDT&amp;q=85&amp;s=1298a0c3b3a1da603b190d0de0e31712" alt="dark logo"/></a><div class="hidden lg:flex items-center gap-x-2"><button type="button" id="localization-select-trigger" aria-haspopup="menu" aria-expanded="false" data-state="closed" class="group disabled:pointer-events-none [&amp;&gt;span]:line-clamp-1 overflow-hidden group group-hover:text-gray-950/70 dark:group-hover:text-white/70 py-1.5 px-2.5 rounded-xl hover:!bg-gray-600/5 dark:hover:!bg-gray-200/5 aria-[expanded=true]:bg-gray-600/5 dark:aria-[expanded=true]:bg-gray-200/5 text-sm font-medium text-gray-900 h-8 focus-visible:outline-primary dark:text-gray-300 group/trigger flex items-center gap-2 whitespace-nowrap" data-component-part="localization-select-trigger"><div class="relative size-4 rounded-full shrink-0"><img class="w-full h-full rounded-full" alt="US" src="https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg"/><div class="absolute top-0 left-0 w-full h-full border rounded-full bg-primary-light/10 border-black/10"></div></div><span class="truncate max-w-[12.5rem]">English</span><svg width="8" height="24" viewBox="0 -9 3 24" class="transition-transform text-gray-400 overflow-visible group-hover:text-gray-600 dark:text-gray-600 dark:group-hover:text-gray-400 rotate-90 group-aria-[expanded=true]/trigger:rotate-[270deg] ml-auto"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></button></div></div><div class="relative hidden lg:flex items-center flex-1 z-20 gap-2.5"><button type="button" class="group/search flex pointer-events-auto rounded-xl w-full items-center text-sm leading-6 h-9 pl-3.5 pr-3 text-gray-500 dark:text-white/50 bg-background-light dark:bg-background-dark dark:brightness-[1.1] dark:ring-1 dark:hover:brightness-[1.25] ring-1 ring-gray-400/30 hover:ring-gray-600/30 dark:ring-gray-600/30 dark:hover:ring-gray-500/30 justify-between truncate gap-2" id="search-bar-entry" aria-label="Open search"><div class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search min-w-4 flex-none text-gray-700 group-hover/search:text-gray-800 dark:text-gray-400 dark:group-hover/search:text-gray-200"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg><div class="truncate min-w-0">Search...</div></div><span class="flex-none text-xs font-semibold">⌘<!-- -->K</span></button><button type="button" class="group/ai flex-none hidden lg:flex items-center justify-center gap-1.5 pl-3 pr-3.5 h-9 rounded-xl shadow-sm bg-background-light dark:bg-background-dark dark:brightness-[1.1] dark:ring-1 dark:hover:brightness-[1.25] ring-1 ring-gray-400/30 hover:ring-gray-600/30 dark:ring-gray-600/30 dark:hover:ring-gray-500/30" id="assistant-entry" aria-label="Toggle assistant panel" data-state="closed"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="size-4 shrink-0 text-gray-700 group-hover/ai:text-gray-800 dark:text-gray-400 dark:group-hover/ai:text-gray-200"><path d="M5.65799 2.99L4.39499 2.569L3.97399 1.306C3.83699 0.898 3.16199 0.898 3.02499 1.306L2.60399 2.569L1.34099 2.99C1.13699 3.058 0.998993 3.249 0.998993 3.464C0.998993 3.679 1.13699 3.87 1.34099 3.938L2.60399 4.359L3.02499 5.622C3.09299 5.826 3.28499 5.964 3.49999 5.964C3.71499 5.964 3.90599 5.826 3.97499 5.622L4.39599 4.359L5.65899 3.938C5.86299 3.87 6.00099 3.679 6.00099 3.464C6.00099 3.249 5.86199 3.058 5.65799 2.99Z" fill="currentColor" stroke="none"></path><path d="M9.5 2.75L11.412 7.587L16.25 9.5L11.412 11.413L9.5 16.25L7.587 11.413L2.75 9.5L7.587 7.587L9.5 2.75Z" stroke="currentColor" width="1.5" linecap="round" linejoin="round"></path></svg><span class="text-sm text-gray-500 dark:text-white/50 whitespace-nowrap">Ask AI</span></button></div><div class="flex-1 relative hidden lg:flex items-center ml-auto justify-end space-x-4"><nav class="text-sm"><ul class="flex space-x-6 items-center"><li class="navbar-link"><a href="https://platform.claude.com/" class="flex items-center gap-1.5 whitespace-nowrap font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" target="_blank">Claude Developer Platform</a></li><li class="block lg:hidden"><a class="flex items-center gap-1.5 whitespace-nowrap font-medium text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" href="https://claude.ai/code">Claude Code on the Web</a></li><li class="whitespace-nowrap hidden lg:flex" id="topbar-cta-button"><a target="_blank" class="group px-4 py-1.5 relative inline-flex items-center text-sm font-medium" href="https://claude.ai/code"><span class="absolute inset-0 bg-primary-dark rounded-xl group-hover:opacity-[0.9]"></span><div class="mr-0.5 space-x-2.5 flex items-center"><span class="z-10 text-white">Claude Code on the Web</span><svg width="3" height="24" viewBox="0 -9 3 24" class="h-5 rotate-0 overflow-visible text-white/90"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div></a></li></ul></nav><div class="flex items-center"><button class="group p-2 flex items-center justify-center" aria-label="Toggle dark mode" data-component-name="theme-toggle"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg" class="size-4 block text-gray-400 dark:hidden group-hover:text-gray-600"><g clip-path="url(#clip0_2880_7340)"><path d="M8 1.11133V2.00022" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.8711 3.12891L12.2427 3.75735" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M14.8889 8H14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12.8711 12.8711L12.2427 12.2427" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 14.8889V14" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.12891 12.8711L3.75735 12.2427" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M1.11133 8H2.00022" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M3.12891 3.12891L3.75735 3.75735" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8.00043 11.7782C10.0868 11.7782 11.7782 10.0868 11.7782 8.00043C11.7782 5.91402 10.0868 4.22266 8.00043 4.22266C5.91402 4.22266 4.22266 5.91402 4.22266 8.00043C4.22266 10.0868 5.91402 11.7782 8.00043 11.7782Z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_2880_7340"><rect width="16" height="16" fill="white"></rect></clipPath></defs></svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon size-4 hidden dark:block text-gray-500 dark:group-hover:text-gray-300"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg></button></div></div><div class="flex lg:hidden items-center gap-3"><button type="button" class="text-gray-500 w-8 h-8 flex items-center justify-center hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300" id="search-bar-entry-mobile" aria-label="Open search"><span class="sr-only">Search...</span><svg class="h-4 w-4 bg-gray-500 dark:bg-gray-400 hover:bg-gray-600 dark:hover:bg-gray-300" style="-webkit-mask-image:url(https://d3gk2c5xim1je2.cloudfront.net/v7.1.0/solid/magnifying-glass.svg);-webkit-mask-repeat:no-repeat;-webkit-mask-position:center;mask-image:url(https://d3gk2c5xim1je2.cloudfront.net/v7.1.0/solid/magnifying-glass.svg);mask-repeat:no-repeat;mask-position:center"></svg></button><button id="assistant-entry-mobile"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="size-4.5 text-gray-500 dark:text-gray-400 hover:text-gray-600 dark:hover:text-gray-300"><path d="M5.65799 2.99L4.39499 2.569L3.97399 1.306C3.83699 0.898 3.16199 0.898 3.02499 1.306L2.60399 2.569L1.34099 2.99C1.13699 3.058 0.998993 3.249 0.998993 3.464C0.998993 3.679 1.13699 3.87 1.34099 3.938L2.60399 4.359L3.02499 5.622C3.09299 5.826 3.28499 5.964 3.49999 5.964C3.71499 5.964 3.90599 5.826 3.97499 5.622L4.39599 4.359L5.65899 3.938C5.86299 3.87 6.00099 3.679 6.00099 3.464C6.00099 3.249 5.86199 3.058 5.65799 2.99Z" fill="currentColor" stroke="none"></path><path d="M9.5 2.75L11.412 7.587L16.25 9.5L11.412 11.413L9.5 16.25L7.587 11.413L2.75 9.5L7.587 7.587L9.5 2.75Z" stroke="currentColor" width="1.5" linecap="round" linejoin="round"></path></svg></button><button aria-label="More actions" class="h-7 w-5 flex items-center justify-end"><svg class="h-4 w-4 bg-gray-500 dark:bg-gray-400 hover:bg-gray-600 dark:hover:bg-gray-300" style="-webkit-mask-image:url(https://d3gk2c5xim1je2.cloudfront.net/v7.1.0/solid/ellipsis-vertical.svg);-webkit-mask-repeat:no-repeat;-webkit-mask-position:center;mask-image:url(https://d3gk2c5xim1je2.cloudfront.net/v7.1.0/solid/ellipsis-vertical.svg);mask-repeat:no-repeat;mask-position:center"></svg></button></div></div></div><button type="button" class="flex items-center h-14 py-4 px-5 lg:hidden focus:outline-0 w-full text-left"><div class="text-gray-500 hover:text-gray-600 dark:text-gray-400 dark:hover:text-gray-300"><span class="sr-only">Navigation</span><svg class="h-4" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"></path></svg></div><div class="ml-4 flex text-sm leading-6 whitespace-nowrap min-w-0 space-x-3 overflow-hidden"><div class="flex items-center space-x-3 flex-shrink-0"><span>Setup and access</span><svg width="3" height="24" viewBox="0 -9 3 24" class="h-5 rotate-0 overflow-visible fill-gray-400"><path d="M0 0L3 3L0 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></div><div class="font-semibold text-gray-900 truncate dark:text-gray-200 min-w-0 flex-1">Advanced setup</div></div></button></div><div class="hidden lg:flex px-12 h-12"><div class="nav-tabs h-full flex text-sm gap-x-6"><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/overview">Getting started<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/sub-agents">Build with Claude Code<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium hover:text-gray-800 dark:hover:text-gray-300 text-gray-800 dark:text-gray-200 [text-shadow:-0.2px_0_0_currentColor,0.2px_0_0_currentColor]" data-active="true" href="/docs/en/admin-setup">Administration<div class="absolute bottom-0 h-[1.5px] w-full left-0 bg-primary dark:bg-primary-light"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/settings">Configuration<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/cli-reference">Reference<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/agent-sdk/overview">Agent SDK<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/whats-new">What&#x27;s New<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a><a class="link nav-tabs-item group relative h-full gap-2 flex items-center font-medium text-gray-600 dark:text-gray-400 hover:text-gray-800 dark:hover:text-gray-300" href="/docs/en/legal-and-compliance">Resources<div class="absolute bottom-0 h-[1.5px] w-full left-0 group-hover:bg-gray-200 dark:group-hover:bg-gray-700"></div></a></div></div></div></div><span hidden="" style="position:fixed;top:1px;left:1px;width:1px;height:0;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0;display:none"></span></div><div class="scroll-mt-[var(--scroll-mt)] peer-[.is-custom]:max-w-none peer-[.is-center]:max-w-3xl peer-[.is-not-custom]:peer-[.is-not-center]:max-w-8xl peer-[.is-not-custom]:px-4 peer-[.is-not-custom]:mx-auto peer-[.is-not-custom]:lg:px-8 peer-[.is-wide]:[&amp;&gt;div:last-child]:max-w-6xl peer-[.is-custom]:[&amp;&gt;div:first-child]:!hidden peer-[.is-custom]:[&amp;&gt;div:first-child]:sm:!hidden peer-[.is-custom]:[&amp;&gt;div:first-child]:md:!hidden peer-[.is-custom]:[&amp;&gt;div:first-child]:lg:!hidden peer-[.is-custom]:[&amp;&gt;div:first-child]:xl:!hidden peer-[.is-center]:[&amp;&gt;div:first-child]:!hidden peer-[.is-center]:[&amp;&gt;div:first-child]:sm:!hidden peer-[.is-center]:[&amp;&gt;div:first-child]:md:!hidden peer-[.is-center]:[&amp;&gt;div:first-child]:lg:!hidden peer-[.is-center]:[&amp;&gt;div:first-child]:xl:!hidden"><div class="z-20 hidden lg:block fixed bottom-0 right-auto w-[18rem]" id="sidebar" style="top:calc(7rem + 0px)"><div class="absolute inset-0 z-10 stable-scrollbar-gutter overflow-auto pr-8 pb-10" id="sidebar-content"><div class="relative lg:text-sm lg:leading-6"><div class="sticky top-0 h-8 pointer-events-none z-10 bg-gradient-to-b from-background-light dark:from-background-dark"></div><div id="navigation-items"><div class=""><div class="sidebar-group-header flex items-center gap-2.5 pl-4 mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200"><h5 id="sidebar-title" class="">Setup and access</h5></div><ul id="sidebar-group" class="sidebar-group space-y-px"><li id="/en/admin-setup" class="relative scroll-m-4 first:scroll-m-20" data-title="Administration overview"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/admin-setup"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Administration overview</span></div></div></a></li><li id="/en/setup" class="relative scroll-m-4 first:scroll-m-20" data-title="Advanced setup" data-active="true"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] bg-primary/10 text-primary [text-shadow:-0.2px_0_0_currentColor,0.2px_0_0_currentColor] dark:text-primary-light dark:bg-primary-light/10" style="padding-left:1rem" href="/docs/en/setup"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Advanced setup</span></div></div></a></li><li id="/en/authentication" class="relative scroll-m-4 first:scroll-m-20" data-title="Authentication"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left break-words hyphens-auto rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/authentication"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Authentication</span></div></div></a></li><li id="/en/server-managed-settings" class="relative scroll-m-4 first:scroll-m-20" data-title="Server-managed settings"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/server-managed-settings"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Server-managed settings</span></div></div></a></li><li id="/en/auto-mode-config" class="relative scroll-m-4 first:scroll-m-20" data-title="Auto mode"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/auto-mode-config"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Auto mode</span></div></div></a></li></ul></div><div class="mt-6 lg:mt-8"><div class="sidebar-group-header flex items-center gap-2.5 pl-4 mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200"><h5 id="sidebar-title" class="">Deployment</h5></div><ul id="sidebar-group" class="sidebar-group space-y-px"><li id="/en/third-party-integrations" class="relative scroll-m-4 first:scroll-m-20" data-title="Overview"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left break-words hyphens-auto rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/third-party-integrations"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Overview</span></div></div></a></li><li id="/en/amazon-bedrock" class="relative scroll-m-4 first:scroll-m-20" data-title="Amazon Bedrock"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/amazon-bedrock"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Amazon Bedrock</span></div></div></a></li><li id="/en/google-vertex-ai" class="relative scroll-m-4 first:scroll-m-20" data-title="Google Vertex AI"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/google-vertex-ai"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Google Vertex AI</span></div></div></a></li><li id="/en/microsoft-foundry" class="relative scroll-m-4 first:scroll-m-20" data-title="Microsoft Foundry"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/microsoft-foundry"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Microsoft Foundry</span></div></div></a></li><li id="/en/network-config" class="relative scroll-m-4 first:scroll-m-20" data-title="Network configuration"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/network-config"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Network configuration</span></div></div></a></li><li id="/en/llm-gateway" class="relative scroll-m-4 first:scroll-m-20" data-title="LLM gateway"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/llm-gateway"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">LLM gateway</span></div></div></a></li><li id="/en/devcontainer" class="relative scroll-m-4 first:scroll-m-20" data-title="Development containers"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/devcontainer"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Development containers</span></div></div></a></li></ul></div><div class="mt-6 lg:mt-8"><div class="sidebar-group-header flex items-center gap-2.5 pl-4 mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200"><h5 id="sidebar-title" class="">Usage and costs</h5></div><ul id="sidebar-group" class="sidebar-group space-y-px"><li id="/en/monitoring-usage" class="relative scroll-m-4 first:scroll-m-20" data-title="Monitoring"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left break-words hyphens-auto rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/monitoring-usage"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Monitoring</span></div></div></a></li><li id="/en/costs" class="relative scroll-m-4 first:scroll-m-20" data-title="Costs"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left break-words hyphens-auto rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/costs"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Costs</span></div></div></a></li><li id="/en/analytics" class="relative scroll-m-4 first:scroll-m-20" data-title="Track team usage with analytics"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/analytics"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Track team usage with analytics</span></div></div></a></li></ul></div><div class="mt-6 lg:mt-8"><div class="sidebar-group-header flex items-center gap-2.5 pl-4 mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200"><h5 id="sidebar-title" class="">Plugin distribution</h5></div><ul id="sidebar-group" class="sidebar-group space-y-px"><li id="/en/plugin-marketplaces" class="relative scroll-m-4 first:scroll-m-20" data-title="Create and distribute a plugin marketplace"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/plugin-marketplaces"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Create and distribute a plugin marketplace</span></div></div></a></li><li id="/en/plugin-dependencies" class="relative scroll-m-4 first:scroll-m-20" data-title="Plugin dependency versions"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/plugin-dependencies"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Plugin dependency versions</span></div></div></a></li></ul></div><div class="mt-6 lg:mt-8"><div class="sidebar-group-header flex items-center gap-2.5 pl-4 mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200"><h5 id="sidebar-title" class="">Security and data</h5></div><ul id="sidebar-group" class="sidebar-group space-y-px"><li id="/en/security" class="relative scroll-m-4 first:scroll-m-20" data-title="Security"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left break-words hyphens-auto rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/security"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Security</span></div></div></a></li><li id="/en/data-usage" class="relative scroll-m-4 first:scroll-m-20" data-title="Data usage"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/data-usage"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Data usage</span></div></div></a></li><li id="/en/zero-data-retention" class="relative scroll-m-4 first:scroll-m-20" data-title="Zero data retention"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/zero-data-retention"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Zero data retention</span></div></div></a></li></ul></div><div class="mt-6 lg:mt-8"><div class="sidebar-group-header flex items-center gap-2.5 pl-4 mb-3.5 lg:mb-2.5 font-semibold text-gray-900 dark:text-gray-200"><h5 id="sidebar-title" class="">Adoption</h5></div><ul id="sidebar-group" class="sidebar-group space-y-px"><li id="/en/communications-kit" class="relative scroll-m-4 first:scroll-m-20" data-title="Communications kit"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/communications-kit"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Communications kit</span></div></div></a></li><li id="/en/champion-kit" class="relative scroll-m-4 first:scroll-m-20" data-title="Champion kit"><a class="group flex items-start pr-3 py-1.5 cursor-pointer gap-x-3 text-left rounded-xl w-full outline-offset-[-1px] hover:bg-gray-600/5 dark:hover:bg-gray-200/5 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300" style="padding-left:1rem" href="/docs/en/champion-kit"><div class="flex-1 flex min-w-0 items-start gap-x-2.5"><div class="flex min-w-0 flex-1 flex-wrap items-center gap-1.5 [word-break:break-word]"><span class="min-w-0 max-w-full break-words hyphens-auto">Champion kit</span></div></div></a></li></ul></div></div></div></div></div><div id="content-container"><script>document.documentElement.setAttribute('data-page-mode', "none");</script><script>(self.__next_s=self.__next_s||[]).push([0,{"suppressHydrationWarning":true,"children":"(function n(a,b,c){if(!document.getElementById(\"footer\")?.classList.contains(\"advanced-footer\")||\"maple\"===b||\"willow\"===b||\"almond\"===b||\"luma\"===b||\"sequoia\"===b)return;let d=document.documentElement.getAttribute(\"data-banner-state\"),e=null!=d?\"visible\"===d:c,f=document.documentElement.getAttribute(\"data-page-mode\"),g=document.getElementById(\"navbar\"),h=document.getElementById(\"navigation-items\"),i=document.getElementById(\"sidebar\"),j=document.getElementById(\"footer\"),k=document.getElementById(\"table-of-contents-content\"),l=document.getElementById(\"banner\"),m=e?l?.offsetHeight??40:0,n=(e?a-2.5:a)*16+m;if(!j||\"center\"===f)return;let o=j.getBoundingClientRect().top,p=window.innerHeight-o,q=(h?.clientHeight??0)+n+32*(\"mint\"===b||\"linden\"===b);if(i&&h)if(p>0){let a=Math.max(0,q-o);i.style.bottom=`${p}px`,i.style.top=`${n-a}px`}else i.style.bottom=\"\",i.style.top=e?`calc(${a-2.5}rem + var(--banner-height, 2.5rem))`:`${a}rem`,i.style.height=\"auto\";k&&g&&(p>0?k.style.top=\"custom\"===f?`${g.clientHeight-p}px`:`${40+g.clientHeight-p}px`:k.style.top=\"\")})(\n  (function m(a,b,c){let d=document.documentElement.getAttribute(\"data-banner-state\"),e=2.5*!!(null!=d?\"visible\"===d:b),f=3*!!a,g=4,h=e+g+f;switch(c){case\"mint\":case\"palm\":break;case\"aspen\":f=2.5*!!a,g=3.5,h=e+f+g;break;case\"luma\":g=3,h=e+g;break;case\"linden\":g=4,h=e+g;break;case\"almond\":g=3.5,h=e+g;break;case\"sequoia\":f=3*!!a,g=3,h=e+g+f}return h})(true, false, \"mint\"),\n  \"mint\",\n  false,\n)","id":"_mintlify-footer-and-sidebar-scroll-script"}])</script><span class="fixed inset-0 bg-background-light dark:bg-background-dark -z-10 pointer-events-none" id="background-color"></span><span class="block absolute dark:hidden inset-0 overflow-hidden pointer-events-none"></span><span class="hidden absolute dark:block inset-0 overflow-hidden pointer-events-none"></span><style data-custom-css-index="0" data-custom-css-path="button.css">
+/* These styles mirror our design system (converted to plain CSS with Claude's help) from https://ui.product.ant.dev/button */
+
+/* Base button styles */
+.btn {
+  position: relative;
+  display: inline-flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 5rem;
+  height: 2.25rem;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  font-family: Styrene;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  &:active {
+    transform: scale(0.985);
+  }
+
+  /* Size variants */
+  &.size-xs {
+    height: 1.75rem;
+    min-width: 3.5rem;
+    padding: 0 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    gap: 0.25rem;
+  }
+  
+  &.size-sm {
+    height: 2rem;
+    min-width: 4rem;
+    padding: 0 0.75rem;
+    border-radius: 0.375rem;
+    font-size: 0.75rem;
+  }
+
+  &.size-lg {
+    height: 2.75rem;
+    min-width: 6rem;
+    padding: 0 1.25rem;
+    border-radius: 0.6rem;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    opacity: 0.5;
+    box-shadow: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow);
+  }
+
+  /* Primary variant */
+  &.primary {
+    font-weight: 600;
+    color: hsl(var(--oncolor-100));
+    background-color: hsl(var(--accent-main-100));
+    background-image: linear-gradient(
+      to right,
+      hsl(var(--accent-main-100)) 0%,
+      hsl(var(--accent-main-200) / 0.5) 50%,
+      hsl(var(--accent-main-200)) 100%
+    );
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    border: 0.5px solid hsl(var(--border-300) / 0.25);
+    box-shadow: 
+      inset 0 0.5px 0px rgba(255, 255, 0, 0.15),
+      0 1px 1px rgba(0, 0, 0, 0.05);
+    text-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+    transition: all 150ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-position: 100% 0%;
+      background-image: linear-gradient(
+        to right,
+        hsl(var(--accent-main-200)) 0%,
+        hsl(var(--accent-main-200)) 100%
+      );
+    }
+
+    &:active {
+      background-color: hsl(var(--accent-main-000));
+      box-shadow: inset 0 1px 6px rgba(0, 0, 0, 0.2);
+      transform: scale(0.985);
+    }
+  }
+
+  /* Flat variant */
+  &.flat {
+    font-weight: 500;
+    color: hsl(var(--oncolor-100));
+    background-color: hsl(var(--accent-main-100));
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: hsl(var(--accent-main-200));
+    }
+  }
+
+  /* Secondary variant */
+  &.secondary {
+    font-weight: 600;
+    color: hsl(var(--text-100) / 0.9);
+    background-image: radial-gradient(
+      ellipse at center,
+      hsl(var(--bg-500) / 0.1) 50%,
+      hsl(var(--bg-500) / 0.3) 100%
+    );
+    border: 0.5px solid hsl(var(--border-400));
+    transition: color 150ms, background-color 150ms;
+
+    &:hover {
+      color: hsl(var(--text-000));
+      background-color: hsl(var(--bg-500) / 0.6);
+    }
+
+    &:active {
+      background-color: hsl(var(--bg-500) / 0.5);
+    }
+  }
+
+  /* Outline variant */
+  &.outline {
+    font-weight: 600;
+    color: hsl(var(--text-200));
+    background-color: transparent;
+    border: 1.5px solid currentColor;
+    transition: color 150ms, background-color 150ms;
+
+    &:hover {
+      color: hsl(var(--text-100));
+      background-color: hsl(var(--bg-400));
+      border-color: hsl(var(--bg-400));
+    }
+  }
+
+  /* Ghost variant */
+  &.ghost {
+    color: hsl(var(--text-200));
+    border-color: transparent;
+    transition: color 150ms, background-color 150ms;
+
+    &:hover {
+      color: hsl(var(--text-100));
+      background-color: hsl(var(--bg-500) / 0.4);
+    }
+
+    &:active {
+      background-color: hsl(var(--bg-400));
+    }
+  }
+
+  /* Underline variant */
+  &.underline {
+    opacity: 0.8;
+    text-decoration-line: none;
+    text-underline-offset: 3px;
+    transition: all 150ms;
+
+    &:hover {
+      opacity: 1;
+      text-decoration-line: underline;
+    }
+
+    &:active {
+      transform: scale(0.985);
+    }
+  }
+
+  /* Danger variant */
+  &.danger {
+    font-weight: 600;
+    color: hsl(var(--oncolor-100));
+    background-color: hsl(var(--danger-100));
+    transition: background-color 150ms;
+
+    &:hover {
+      background-color: hsl(var(--danger-200));
+    }
+  }
+}
+</style><style data-custom-css-index="1" data-custom-css-path="style.css">/* Anthropic Sans - Static fonts from assets.claude.ai */
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Regular-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-RegularItalic-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Medium-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-MediumItalic-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Semibold-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-SemiboldItalic-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-Bold-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Sans";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSans-Text-BoldItalic-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Anthropic Serif Display - for headlines */
+@font-face {
+  font-family: "Anthropic Serif Display";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Display-Regular-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif Display";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Display-RegularItalic-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif Display";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Display-Medium-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif Display";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Display-Semibold-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif Display";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Display-Bold-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Anthropic Serif - Static fonts from assets.claude.ai */
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Regular-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-RegularItalic-Static.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Medium-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-MediumItalic-Static.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Semibold-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-SemiboldItalic-Static.otf") format("opentype");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-Bold-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Anthropic Serif";
+  src: url("https://assets.claude.ai/Fonts/AnthropicSerif-Text-BoldItalic-Static.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Color variables copied from https://github.com/anthropics/apps/blob/main/packages/ui/themes/generated/theme-colors.css */
+:root {
+  --always-white: 0 0% 100%;
+  --always-black: 0 0% 0%;
+  --constant-book-cloth: 15 55% 80%;
+  --constant-clay: 15 60% 85%;
+  --constant-kraft: 25 40% 83%;
+  --constant-manilla: 40 20% 92%;
+  --constant-slate-000: 0 0% 100%;
+  --constant-slate-050: 48 33.3% 97.1%;
+  --constant-slate-100: 53 28.6% 94.5%;
+  --constant-slate-150: 48 25% 92.2%;
+  --constant-slate-200: 50 20.7% 88.6%;
+  --constant-slate-250: 51 16.5% 84.5%;
+  --constant-slate-300: 50 11.5% 79.6%;
+  --constant-slate-350: 50 9% 73.7%;
+  --constant-slate-400: 49 6.5% 66.9%;
+  --constant-slate-450: 48 4.8% 59.2%;
+  --constant-slate-500: 53 3.2% 51.4%;
+  --constant-slate-550: 51 3.1% 43.7%;
+  --constant-slate-600: 48 2.7% 35.9%;
+  --constant-slate-650: 48 3.4% 29.2%;
+  --constant-slate-700: 60 2.5% 23.3%;
+  --constant-slate-750: 60 2.1% 18.4%;
+  --constant-slate-800: 60 2.7% 14.5%;
+  --constant-slate-850: 30 3.3% 11.8%;
+  --constant-slate-900: 30 4% 9.8%;
+  --constant-slate-950: 60 2.6% 7.6%;
+  --constant-slate-1000: 60 3.4% 5.7%;
+}
+
+:root:not(.dark) {
+  --accent-brand: 15 63.1% 59.6%;
+  --accent-main-000: 15 55.6% 52.4%;
+  --accent-main-100: 15 55.6% 52.4%;
+  --accent-main-200: 15 63.1% 59.6%;
+  --accent-main-900: 0 0% 0%;
+  --accent-pro-000: 251 34.2% 33.3%;
+  --accent-pro-100: 251 40% 45.1%;
+  --accent-pro-200: 251 61% 72.2%;
+  --accent-pro-900: 253 33.3% 91.8%;
+  --accent-secondary-000: 210 73.7% 40.2%;
+  --accent-secondary-100: 210 70.9% 51.6%;
+  --accent-secondary-200: 210 70.9% 51.6%;
+  --accent-secondary-900: 211 72% 90%;
+  --bg-000: 0 0% 100%;
+  --bg-100: 48 33.3% 97.1%;
+  --bg-200: 53 28.6% 94.5%;
+  --bg-300: 48 25% 92.2%;
+  --bg-400: 50 20.7% 88.6%;
+  --bg-500: 50 20.7% 88.6%;
+  --border-100: 30 3.3% 11.8%;
+  --border-200: 30 3.3% 11.8%;
+  --border-300: 30 3.3% 11.8%;
+  --border-400: 30 3.3% 11.8%;
+  --danger-000: 0 61.4% 22.4%;
+  --danger-100: 0 58.6% 34.1%;
+  --danger-200: 0 58.6% 34.1%;
+  --danger-900: 0 50% 95%;
+  --oncolor-100: 0 0% 100%;
+  --oncolor-200: 60 6.7% 97.1%;
+  --oncolor-300: 60 6.7% 97.1%;
+  --text-000: 60 2.6% 7.6%;
+  --text-100: 60 2.6% 7.6%;
+  --text-200: 60 2.5% 23.3%;
+  --text-300: 60 2.5% 23.3%;
+  --text-400: 51 3.1% 43.7%;
+  --text-500: 51 3.1% 43.7%;
+}
+
+:root.dark {
+  --accent-brand: 15 63.1% 59.6%;
+  --accent-main-000: 15 55.6% 52.4%;
+  --accent-main-100: 15 63.1% 59.6%;
+  --accent-main-200: 15 63.1% 59.6%;
+  --accent-main-900: 0 0% 0%;
+  --accent-pro-000: 251 84.6% 74.5%;
+  --accent-pro-100: 251 40.2% 54.1%;
+  --accent-pro-200: 251 40% 45.1%;
+  --accent-pro-900: 250 25.3% 19.4%;
+  --accent-secondary-000: 210 71.1% 62%;
+  --accent-secondary-100: 210 70.9% 51.6%;
+  --accent-secondary-200: 210 70.9% 51.6%;
+  --accent-secondary-900: 210 55.9% 24.6%;
+  --bg-000: 60 2.1% 18.4%;
+  --bg-100: 60 2.7% 14.5%;

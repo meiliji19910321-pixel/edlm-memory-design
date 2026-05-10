@@ -1,0 +1,15 @@
+{
+  "description": "Memory system SessionEnd hook - saves conversation and extracts memories",
+  "hooks": {
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"D:\\CLAUDE.MD\\mem\\hooks\\mem_session_end_hook.py\""
+          }
+        ]
+      }
+    ]
+  }
+}

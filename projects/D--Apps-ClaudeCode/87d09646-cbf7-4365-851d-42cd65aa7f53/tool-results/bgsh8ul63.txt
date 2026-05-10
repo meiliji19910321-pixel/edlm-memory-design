@@ -1,0 +1,883 @@
+
+[32;1m2.0.2  : [0m@{name=claude-mem; version=2.0.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=750a92150ddd2b6ab37f8b86f83916eae9586589; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.3  : [0m@{name=claude-mem; version=2.0.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=eb30a71344a61302aa60540f94b84fe637d99775; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.4  : [0m@{name=claude-mem; version=2.0.4; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.4; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=fa6aa99079ef13d2060f774bc07a4ef68f657a9e; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.5  : [0m@{name=claude-mem; version=2.0.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=3dd788941c17148d27eec72e776965a9fc3cda81; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.6  : [0m@{name=claude-mem; version=2.0.6; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.6; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=b58c9f84292bcd635e901282bec4caeeb646f8b4; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.7  : [0m@{name=claude-mem; version=2.0.7; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.7; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=6e26b13d8ef224d77d04f379645e7b41350ecee0; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.8  : [0m@{name=claude-mem; version=2.0.8; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.8; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=ce64185b348ef34ec0f94e53c53d68aa41be70c1; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.9  : [0m@{name=claude-mem; version=2.0.9; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.0.9; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=b7725ad271bf198862fb426f47fee477e49bc303; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.0.10 : [0m@{name=claude-mem; version=2.0.10; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@2.0.10; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; gitHead=e639f02be8306c944185543b17138bf9ce5c918c; _npmUser=; repository=; _npmVersion=11.5.1; desc
+         ription=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersio
+         n=24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.1.1  : [0m@{name=claude-mem; version=2.1.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.1.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=efa0e6ce32aab30d1d46e8aa935e9c620158aa5a; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m2.1.2  : [0m@{name=claude-mem; version=2.1.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@2.1.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=c112f2aa3c2994d32befa37850768f427331dd2a; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.0.1  : [0m@{name=claude-mem; version=3.0.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.0.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=ed8d24a322b3ddae20013d2c13394e5b86e42359; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.0.2  : [0m@{name=claude-mem; version=3.0.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.0.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=66d4e61e985c0100852c5abdcc423d63dd322560; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.0.3  : [0m@{name=claude-mem; version=3.0.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.0.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=66814df1932f09c360d22b56163fc7fc39d9a6ad; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.0.4  : [0m@{name=claude-mem; version=3.0.4; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.0.4; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=3e23d42691e3cc876160898e425286d4abde66bb; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.0.5  : [0m@{name=claude-mem; version=3.0.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.0.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=05aa575367ac5324812586c308eb6da26b2c1a3c; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.1.2  : [0m@{name=claude-mem; version=3.1.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.1.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=1e66404ee4494bc8e56701589e68955f98dc6ac4; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.1.6  : [0m@{name=claude-mem; version=3.1.6; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.1.6; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=597b44c6d37ce3771073e1302ce4b33711e5e5a7; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.1.7  : [0m@{name=claude-mem; version=3.1.7; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.1.7; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=6800de43a27bd61ebc0df86b44591b1146e448e7; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.0  : [0m@{name=claude-mem; version=3.2.0; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.0; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=3bf95757248c140eb8d5b750c65ac93aaaa26285; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.1  : [0m@{name=claude-mem; version=3.2.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=419fc0db5d24d920387021c7103b72d30a0dea40; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.2  : [0m@{name=claude-mem; version=3.2.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=f793be7fb7dcd38d6cde50b8a318582eb82ba4f0; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.3  : [0m@{name=claude-mem; version=3.2.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=cdef5db066a21a4b580a39297171e59dfec180ba; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.4  : [0m@{name=claude-mem; version=3.2.4; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.4; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=9be54a1cb7ff7d504afd6b723d08b54ed72c8f71; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.5  : [0m@{name=claude-mem; version=3.2.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=7d1a7f172bf09d5bc8d1f1cbed089fe65f596aa0; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.6  : [0m@{name=claude-mem; version=3.2.6; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.6; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=0d7579a97a424d20e63ec6a15d21fdde3cda5b7f; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.7  : [0m@{name=claude-mem; version=3.2.7; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.7; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=bfa3e4bd674a57ada98448af2cb47621259e605c; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.2.8  : [0m@{name=claude-mem; version=3.2.8; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.2.8; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=27f25c934bd32ab351173edef2f09b89dc046b53; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.0  : [0m@{name=claude-mem; version=3.3.0; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.0; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=7769220f8c95c61305b0e7b6beaf633e95f8c30b; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.1  : [0m@{name=claude-mem; version=3.3.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=93deab9b987d0545d5ec8f54de1ad658b898c604; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.3  : [0m@{name=claude-mem; version=3.3.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=83cded95869c275f32a797b7b880e4a06349a1ac; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.5  : [0m@{name=claude-mem; version=3.3.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=7c48e1ab28861971628598fd2eaf169b33e0d8ff; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.7  : [0m@{name=claude-mem; version=3.3.7; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.7; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=70db172492b0c3dd2ac0e5b6b2438d354ee23ea3; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.8  : [0m@{name=claude-mem; version=3.3.8; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.8; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=c0e0086c89307d170d32ea0f81be901c77faca43; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.3.9  : [0m@{name=claude-mem; version=3.3.9; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.3.9; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; main=claude-mem; type=module; engines=; gitHead=cca99f41cc3f8f9bc8a9bc705cb573161a33f747; scripts=; 
+         _npmUser=; repository=; _npmVersion=10.9.2; description=Memory compression system for Claude Code - persist co
+         ntext across sessions; directories=; _nodeVersion=22.15.1; dependencies=; publishConfig=; _hasShrinkwrap=False
+         ; devDependencies=; _npmOperationalInternal=}
+[32;1m3.3.10 : [0m@{name=claude-mem; version=3.3.10; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.3.10; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; main=claude-mem; type=module; _from=file:claude-mem-3.3.10.tgz; engines=; scripts=; _npmUser=; _re
+         solved=/root/claude-mem-source/claude-mem-3.3.10.tgz; _integrity=sha512-+ACsLJaeCAfV6OzzyRzd9KnlQ0lZTiswtEacpJ
+         tbhnCoynRt2HRIeclsxIvl5JX2Tn3DIG3cXmIm9m0/r8Wvew==; repository=; _npmVersion=10.9.2; description=Memory compre
+         ssion system for Claude Code - persist context across sessions; directories=; _nodeVersion=22.15.1; dependenci
+         es=; publishConfig=; _hasShrinkwrap=False; devDependencies=; _npmOperationalInternal=}
+[32;1m3.3.11 : [0m@{name=claude-mem; version=3.3.11; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.3.11; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; main=claude-mem; type=module; _from=file:claude-mem-3.3.11.tgz; engines=; scripts=; _npmUser=; _re
+         solved=/root/claude-mem-source/claude-mem-3.3.11.tgz; _integrity=sha512-b2+nWFjZUYZ+N8UUNMTpB5c4AaXyX/HF1pHjiR
+         IMKXSjNpiuRAIhlj01H2/qm4ShaoBTQs0mA/jWFmBcm4HZkQ==; repository=; _npmVersion=10.9.2; description=Memory compre
+         ssion system for Claude Code - persist context across sessions; directories=; _nodeVersion=22.15.1; dependenci
+         es=; publishConfig=; _hasShrinkwrap=False; devDependencies=; _npmOperationalInternal=}
+[32;1m3.3.12 : [0m@{name=claude-mem; version=3.3.12; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.3.12; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; gitHead=5e5ecdcd63bce8e10fea8db8330ac9878199e66b; _npmUser=; repository=; _npmVersion=10.9.2; desc
+         ription=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersio
+         n=22.15.1; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.1  : [0m@{name=claude-mem; version=3.4.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=dc6e1390bc06dc23644551de7e5fac9ea10f6872; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.2  : [0m@{name=claude-mem; version=3.4.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=7d09c7c7778a53adc29fc643d172cb5cf00e2c9b; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.3  : [0m@{name=claude-mem; version=3.4.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=10b9982a54343e676475ce6e3dabf651e73a85d9; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.4  : [0m@{name=claude-mem; version=3.4.4; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.4; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=9be4c1ec716f30e265157ad3d3ae3b74623a4639; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.5  : [0m@{name=claude-mem; version=3.4.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=859e1197a140330d0e53fd5761ac50d28f0f5967; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.6  : [0m@{name=claude-mem; version=3.4.6; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.6; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; gitHead=6288c14e387ddd573142b2a6f77e4c963e49dbb3; _npmUser=; repository=; _npmVersion=11.5.1; descri
+         ption=Memory compression system for Claude Code - persist context across sessions; directories=; _nodeVersion=
+         24.5.0; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.8  : [0m@{name=claude-mem; version=3.4.8; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.4.8; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=1133b12720c30a00017715ef9f2d7e80058e6cc3; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.4.10 : [0m@{name=claude-mem; version=3.4.10; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.4.10; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; gitHead=9810c9b80c3d26ebe320e94dab81ab0626363f6f; _npmUser=; repository=; _
+         npmVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; di
+         rectories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=
+         }
+[32;1m3.5.0  : [0m@{name=claude-mem; version=3.5.0; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.0; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=7f13aa3fdf218f99420f3107b230f037c6a5cacc; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.1  : [0m@{name=claude-mem; version=3.5.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=181bf00d8ed3ee18edd295618b7b4d23f2584941; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.2  : [0m@{name=claude-mem; version=3.5.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=8bb1481a95eea6fbfa74546ede5a90ec9d9941ad; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.3  : [0m@{name=claude-mem; version=3.5.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=a480d353c9b648895597e2a3fc8e6f942d95e703; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.4  : [0m@{name=claude-mem; version=3.5.4; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.4; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=d03fb8e75d1052da6e2d923dd29fd769e3a512bb; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.5  : [0m@{name=claude-mem; version=3.5.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=7d1d62bf9c16a8381d358833781bd798050c91fc; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.6  : [0m@{name=claude-mem; version=3.5.6; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.6; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=9f463243289a732acedc3ec8d42f1c98085eee03; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.7  : [0m@{name=claude-mem; version=3.5.7; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.7; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=b85d3a60dd2774358095827d7d5704282571b143; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.8  : [0m@{name=claude-mem; version=3.5.8; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.8; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=3f8f6f189f0e1ba56ca28fc79d5f668f68a49b58; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.5.9  : [0m@{name=claude-mem; version=3.5.9; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.5.9; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=72c9244eaf3eb49289fff51a537ece3da2a48469; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.0  : [0m@{name=claude-mem; version=3.6.0; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.0; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=8d68971808950fb186136b171209331f17427e8c; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.1  : [0m@{name=claude-mem; version=3.6.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=d8875540faf97b5c4679b2b1a1edda40c20705a1; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.2  : [0m@{name=claude-mem; version=3.6.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=ac8042fb32ab25faedeeaefcd432b5c5b3bdb64f; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.3  : [0m@{name=claude-mem; version=3.6.3; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.3; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=c2ba83b724246ba05fc6f7838715a71fd64f7193; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.4  : [0m@{name=claude-mem; version=3.6.4; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.4; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=8368c63116d2be9a74d1c5e01175546dfbf81c22; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.5  : [0m@{name=claude-mem; version=3.6.5; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.5; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=02ff6132770f28842a2a26e400dda76be553c048; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.6  : [0m@{name=claude-mem; version=3.6.6; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.6; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=6b6076db05bc91b7410b950954c13349cc141cfa; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.8  : [0m@{name=claude-mem; version=3.6.8; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.8; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=216310a9d2541173b4b6dc3d2432eddf7c6c7241; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.9  : [0m@{name=claude-mem; version=3.6.9; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.6.9; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=7b56f456f383d120f730671bcc2d363a561be0c3; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.6.10 : [0m@{name=claude-mem; version=3.6.10; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.6.10; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; gitHead=f329ccb4db0392253ac5245dc61b0b962b1d1d03; _npmUser=; repository=; _
+         npmVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; di
+         rectories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=
+         }
+[32;1m3.7.0  : [0m@{name=claude-mem; version=3.7.0; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.7.0; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=9a4b9f97edeb2d37bbe81f2555e63e850881c6fc; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.7.1  : [0m@{name=claude-mem; version=3.7.1; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.7.1; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=44f271131fa6f131ce1fb54151f9ecd40155c7ff; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.7.2  : [0m@{name=claude-mem; version=3.7.2; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.7.2; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=29f2cebbd8a38df29b0b5c417df6768746524f36; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.9.9  : [0m@{name=claude-mem; version=3.9.9; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=claud
+         e-mem@3.9.9; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; bin
+         =; dist=; type=module; engines=; gitHead=b5fe5fa90909e172a04d63f088209113f29a420b; _npmUser=; repository=; _np
+         mVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.9.10 : [0m@{name=claude-mem; version=3.9.10; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.9.10; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; gitHead=8e6b1926f07f50b5ca9aa97a704399b96cef1fca; _npmUser=; repository=; _
+         npmVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; di
+         rectories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=
+         }
+[32;1m3.9.11 : [0m@{name=claude-mem; version=3.9.11; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.9.11; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; _npmUser=; repository=; _npmVersion=11.5.1; description=Memory compression 
+         system for Claude Code - persist context across sessions; directories=; _nodeVersion=24.5.0; dependencies=; pu
+         blishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.9.12 : [0m@{name=claude-mem; version=3.9.12; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.9.12; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; _npmUser=; repository=; _npmVersion=11.5.1; description=Memory compression 
+         system for Claude Code - persist context across sessions; directories=; _nodeVersion=24.5.0; dependencies=; pu
+         blishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.9.13 : [0m@{name=claude-mem; version=3.9.13; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.9.13; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; _npmUser=; repository=; _npmVersion=11.5.1; description=Memory compression 
+         system for Claude Code - persist context across sessions; directories=; _nodeVersion=24.5.0; dependencies=; pu
+         blishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.9.14 : [0m@{name=claude-mem; version=3.9.14; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.9.14; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; _npmUser=; repository=; _npmVersion=11.5.1; description=Memory compression 
+         system for Claude Code - persist context across sessions; directories=; _nodeVersion=24.5.0; dependencies=; pu
+         blishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=}
+[32;1m3.9.16 : [0m@{name=claude-mem; version=3.9.16; keywords=System.Object[]; author=; license=SEE LICENSE IN LICENSE; _id=clau
+         de-mem@3.9.16; maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; b
+         in=; dist=; type=module; engines=; gitHead=75ffa182bedfdd25d666e832258b3f6e42067ccc; _npmUser=; repository=; _
+         npmVersion=11.5.1; description=Memory compression system for Claude Code - persist context across sessions; di
+         rectories=; _nodeVersion=24.5.0; dependencies=; publishConfig=; _hasShrinkwrap=False; _npmOperationalInternal=
+         }
+[32;1m9.0.7  : [0m@{name=claude-mem; version=9.0.7; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@9.0.7; m
+         aintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; dist=; type=modul
+         e; engines=; exports=; gitHead=67651669a1d221d5e4dfd49de916945b0024db5b; scripts=; _npmUser=; repository=; _np
+         mVersion=11.6.2; description=Memory compression system for Claude Code - persist context across sessions; dire
+         ctories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalInternal=
+         }
+[32;1m10.0.7 : [0m@{name=claude-mem; version=10.0.7; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.0.7;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=685d54f2cb898153bcfea1da5185046a59ff1731; scripts=; _npmUser=; repositor
+         y=; _npmVersion=11.6.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalIn
+         ternal=}
+[32;1m10.0.8 : [0m@{name=claude-mem; version=10.0.8; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.0.8;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=51abe5d1ffc9bc3e3364992044d173efb9382981; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.1.0 : [0m@{name=claude-mem; version=10.1.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.1.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=327dd449929000dd98b6a06acd74f6bf9957b077; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.2.1 : [0m@{name=claude-mem; version=10.2.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=df36ce68dfd97a45f052c8efa77ec5ee2e27e4f3; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.2.2 : [0m@{name=claude-mem; version=10.2.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=613f0e97950fdd0ee2c2d42e96d723d331624ade; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.2.3 : [0m@{name=claude-mem; version=10.2.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=b446f2630ef12a2b7e8088a605a56113ee0592a7; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.2.4 : [0m@{name=claude-mem; version=10.2.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=b1cfc85333461b459a03a0ae115cac0c76420059; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.2.5 : [0m@{name=claude-mem; version=10.2.5; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.5;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=149f5486673daecabe9d6441d3c0b0097cd5cea6; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.2.6 : [0m@{name=claude-mem; version=10.2.6; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.6;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=ea683a4e6cca58842cb55f86c2314692a0999a76; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.3.0 : [0m@{name=claude-mem; version=10.3.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.3.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=91b48a6481b6ad7970241490160211a3051ed7de; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.3.1 : [0m@{name=claude-mem; version=10.3.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.3.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=097035de6cab3758b90a274b6820cadf365ad874; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.3.2 : [0m@{name=claude-mem; version=10.3.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.3.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=c2c3e3069c76a979dfc67575097a2baeacbf4073; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.3.3 : [0m@{name=claude-mem; version=10.3.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.3.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=2db9d0e38351d7e00b140d4a9a0870bc41211d92; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.4.0 : [0m@{name=claude-mem; version=10.4.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.4.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=23f30d35b9d0c7340d0a73303a0422c661c81e35; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.4.1 : [0m@{name=claude-mem; version=10.4.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.4.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=41440102643730dde61f82ac24c8ca3f70ab7d21; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.4.2 : [0m@{name=claude-mem; version=10.4.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.4.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=cd05b626a7ecf7d3277f6df2796ac1c457e3e373; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.4.3 : [0m@{name=claude-mem; version=10.4.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.4.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=dd1b81244379e667726c8838ab6e8c608f1c65d4; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.4.4 : [0m@{name=claude-mem; version=10.4.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.4.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=50d1dfb7ee1e571fb85d5d5107d1725c527e316f; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.0 : [0m@{name=claude-mem; version=10.5.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=272391ec9d697e05cfa7af6992e87eda0a79f0c0; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.1 : [0m@{name=claude-mem; version=10.5.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=a5e86ad4ab48cbe7329db250c5021fe1c1dc9c59; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.2 : [0m@{name=claude-mem; version=10.5.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=6c7acfbc1c03808c17ded3e3faa0cca8589a9d29; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.3 : [0m@{name=claude-mem; version=10.5.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=a32151a166b70587f8ae67c35b5ebdf06d57ce81; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.4 : [0m@{name=claude-mem; version=10.5.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=3af68b7dfe35fa4bc1b06a13312c854101e7a787; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.5 : [0m@{name=claude-mem; version=10.5.5; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.5;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=79bc3c85b36f0460e565cc025a5479e364d6efd9; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.0; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m10.5.6 : [0m@{name=claude-mem; version=10.5.6; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.5.6;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=5ccd81b8a350197a237fe43fa23341ac71de4ed9; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.1; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDependen
+         cies=; _npmOperationalInternal=}
+[32;1m10.6.0 : [0m@{name=claude-mem; version=10.6.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.6.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=8c79b99384cc8201320ddacf6711ababc273eff0; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.1; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDependen
+         cies=; _npmOperationalInternal=}
+[32;1m10.6.1 : [0m@{name=claude-mem; version=10.6.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.6.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=d54e574251d7736cfd6030f8ba86b15fbebd3b50; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.1; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDependen
+         cies=; _npmOperationalInternal=}
+[32;1m10.6.2 : [0m@{name=claude-mem; version=10.6.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.6.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=0524fa83cdbdb340e8b2e28b0bf7b82d77aebad4; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.1; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDependen
+         cies=; _npmOperationalInternal=}
+[32;1m10.6.3 : [0m@{name=claude-mem; version=10.6.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.6.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=ddb57ea598e8a466cc9d47f84a8e034a7186250c; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.1; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDependen
+         cies=; _npmOperationalInternal=}
+[32;1m10.7.0 : [0m@{name=claude-mem; version=10.7.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.7.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=c5129ed01611e1a4a5ee8ae3d818a2c53e9622e2; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDe
+         pendencies=; _npmOperationalInternal=}
+[32;1m10.7.1 : [0m@{name=claude-mem; version=10.7.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.7.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=bedca129ac8ca3e3bddb45a1d41cd6893f7aa924; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDe
+         pendencies=; _npmOperationalInternal=}
+[32;1m10.7.2 : [0m@{name=claude-mem; version=10.7.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.7.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=b38557088430f71d4d5da138730924cbeda6bfec; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDe
+         pendencies=; _npmOperationalInternal=}
+[32;1m11.0.0 : [0m@{name=claude-mem; version=11.0.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@11.0.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=a7ebc35ee0da659aab3630b669fcf20b4162dedd; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDe
+         pendencies=; _npmOperationalInternal=}
+[32;1m12.0.0 : [0m@{name=claude-mem; version=12.0.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.0.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=25ccf46ac0e388808332e9ead3ea7de0817b5830; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDe
+         pendencies=; _npmOperationalInternal=}
+[32;1m12.0.1 : [0m@{name=claude-mem; version=12.0.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.0.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=29f2d0bc021b6f77524c03fa6abb757f85d3466f; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; optionalDe
+         pendencies=; _npmOperationalInternal=}
+[32;1m12.1.0 : [0m@{name=claude-mem; version=12.1.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=b701bf29e67683babf88878f0ae66e97c0300470; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.1.1 : [0m@{name=claude-mem; version=12.1.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=06b997e3d03e68792e964e3b81c259c00bceb0dc; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.1.2 : [0m@{name=claude-mem; version=12.1.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=1d7500604fe55cbde57875cb40e2cd431b1de2b3; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.1.3 : [0m@{name=claude-mem; version=12.1.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=4ddf57610abb731ad53109b3aa3f957445ee13fb; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.1.4 : [0m@{name=claude-mem; version=12.1.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=bfde520ea3fec188288d8f38f8641aaf8cb2de50; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.1.5 : [0m@{name=claude-mem; version=12.1.5; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.5;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=d7b4610e271e8ccc047c06ea6d17673e800177b0; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.1.6 : [0m@{name=claude-mem; version=12.1.6; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.1.6;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=69080dc291b62c4222930c645617e26d747b148f; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.2.0 : [0m@{name=claude-mem; version=12.2.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.2.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=11666e9ffbb2a2da34ca81545851be6628c6602f; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.2.1 : [0m@{name=claude-mem; version=12.2.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.2.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=be730a09ac4ca1f057f2675b4b07615fbc4fe4eb; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.2.2 : [0m@{name=claude-mem; version=12.2.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.2.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=b1dfec0f433391fe8c71b920c9c6b2bc6c3f1f42; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.2.3 : [0m@{name=claude-mem; version=12.2.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.2.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=bbfb65668ff2ab7968db56fb3b0d6a0eb220e100; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.0 : [0m@{name=claude-mem; version=12.3.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=fc10491eae9f485f94b5e8ae00bca3060b23c377; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.1 : [0m@{name=claude-mem; version=12.3.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=f46776334043743e3036e275b6f8f1e0a9139133; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.2 : [0m@{name=claude-mem; version=12.3.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=77a2b3a0cb790fe0a5ffb85456e824fb60c668d6; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.3 : [0m@{name=claude-mem; version=12.3.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=502f2fab027ab144adb51d680fc11fb5104c816d; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.4 : [0m@{name=claude-mem; version=12.3.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=7e2f46387730cc814e8f2d74ed4b0d47d00ec279; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.5 : [0m@{name=claude-mem; version=12.3.5; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.5;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=2f2c03896c9327646da3b39898ac2794e7af20c5; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.6 : [0m@{name=claude-mem; version=12.3.6; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.6;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=8fd3685d6e04b64e92f1b1d8eb1361e47af2b8af; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.7 : [0m@{name=claude-mem; version=12.3.7; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.7;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=fa4ae3b9467df18e5eadf025876fe37cb4e4558b; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.8 : [0m@{name=claude-mem; version=12.3.8; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.8;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=c0bfbaaf04bf9a2a207c5de346c587c3aeed8178; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.3.9 : [0m@{name=claude-mem; version=12.3.9; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.3.9;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=b85419b22030d40723421cd593c5a99d01f6e7d2; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.6.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDepe
+         ndencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.0 : [0m@{name=claude-mem; version=12.4.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=d7c7eccd7fc86bc9e95a4312c4ba886eb5733951; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.1 : [0m@{name=claude-mem; version=12.4.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=533c3177373958b31edb00bd00493feae87d55c0; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.6.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDepe
+         ndencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.2 : [0m@{name=claude-mem; version=12.4.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; scripts=; _npmUser=; repository=; _npmVersion=11.6.2; description=Memory c
+         ompression system for Claude Code - persist context across sessions; directories=; _nodeVersion=24.5.0; depend
+         encies=; _hasShrinkwrap=False; devDependencies=; trustedDependencies=System.Object[]; optionalDependencies=; _
+         npmOperationalInternal=}
+[32;1m12.4.3 : [0m@{name=claude-mem; version=12.4.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=0975ea7d6787ea063cf821a8bef3105754271b55; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.6.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDepe
+         ndencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.4 : [0m@{name=claude-mem; version=12.4.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; scripts=; _npmUser=; repository=; _npmVersion=11.6.2; description=Memory c
+         ompression system for Claude Code - persist context across sessions; directories=; _nodeVersion=24.5.0; depend
+         encies=; _hasShrinkwrap=False; devDependencies=; trustedDependencies=System.Object[]; optionalDependencies=; _
+         npmOperationalInternal=}
+[32;1m12.4.5 : [0m@{name=claude-mem; version=12.4.5; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.5;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=21bd5c0d3795ff6697c8f0e6e36eddaee8e18b34; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.6 : [0m@{name=claude-mem; version=12.4.6; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.6;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=9dd8d6649ed6aaa6f32e035013a9641b89931f73; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.7 : [0m@{name=claude-mem; version=12.4.7; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.7;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=2d146b78f22d427a8bd7eed68fbb2aa8973c59de; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.8 : [0m@{name=claude-mem; version=12.4.8; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.8;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=594becf2f0ba04892dac27dc0bfb11dfc2e08978; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.6.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDepe
+         ndencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.4.9 : [0m@{name=claude-mem; version=12.4.9; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.4.9;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=58a413185cf03192ac15eee360d3f0f0101ede5c; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.6.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=24.5.0; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDepe
+         ndencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.5.0 : [0m@{name=claude-mem; version=12.5.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.5.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=a81a1f6964af3b4a31e8bd0797535a3e37a55688; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.5.1 : [0m@{name=claude-mem; version=12.5.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.5.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=9f9fbd76fb8d3abd98d713f9baeb19138fb9a92e; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.6.0 : [0m@{name=claude-mem; version=12.6.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.6.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=a3b161f8c8bb37840ea6c5b53f13d4bd6c393330; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.6.1 : [0m@{name=claude-mem; version=12.6.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.6.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=1a8432fe974ddc92097de551451518fe16146b0f; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.6.2 : [0m@{name=claude-mem; version=12.6.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.6.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=ec97813582f85fa1c95751d65ef4730ce6f2bdbd; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.6.3 : [0m@{name=claude-mem; version=12.6.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.6.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=519fbe5daa74fde616e1620e4234f0a267a46a07; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.11.0; description=Memory compression system for Claude Code - persist context across 
+         sessions; directories=; _nodeVersion=25.8.1; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m10.2.0 : [0m@{name=claude-mem; version=10.2.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@10.2.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; dist=; typ
+         e=module; engines=; exports=; gitHead=854bf922a4820fbbdfd34588d1b4288477502556; scripts=; _npmUser=; repositor
+         y=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across session
+         s; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; _npmOperationalI
+         nternal=}
+[32;1m12.6.4 : [0m@{name=claude-mem; version=12.6.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.6.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=89718f79b0f5af5c364b378d55c4776381544061; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.11.0; description=Memory compression system for Claude Code - persist context across 
+         sessions; directories=; _nodeVersion=25.8.1; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.6.5 : [0m@{name=claude-mem; version=12.6.5; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.6.5;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=09dcecafd00974ceed07f9008ef98e9c3248a011; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.7.0 : [0m@{name=claude-mem; version=12.7.0; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.7.0;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=1667eac0beb5ceef14fb8e32227789f1311b7d89; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.11.0; description=Memory compression system for Claude Code - persist context across 
+         sessions; directories=; _nodeVersion=25.8.1; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.7.1 : [0m@{name=claude-mem; version=12.7.1; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.7.1;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=6198762f1e6d45679c19156b675b00c3dea02a37; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.11.0; description=Memory compression system for Claude Code - persist context across 
+         sessions; directories=; _nodeVersion=25.8.1; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.7.2 : [0m@{name=claude-mem; version=12.7.2; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.7.2;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=20e98d83618109d276af20f685ef3832c591e748; scripts=; _npmUser=; rep
+         ository=; _npmVersion=10.8.2; description=Memory compression system for Claude Code - persist context across s
+         essions; directories=; _nodeVersion=20.20.2; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.7.3 : [0m@{name=claude-mem; version=12.7.3; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.7.3;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=02c7a3dfa9f3a5138a1b1fc6d2349d9695411786; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.11.0; description=Memory compression system for Claude Code - persist context across 
+         sessions; directories=; _nodeVersion=25.8.1; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.7.4 : [0m@{name=claude-mem; version=12.7.4; keywords=System.Object[]; author=; license=AGPL-3.0; _id=claude-mem@12.7.4;
+          maintainers=System.Object[]; homepage=https://github.com/thedotmack/claude-mem#readme; bugs=; np=; bin=; dist
+         =; type=module; engines=; exports=; gitHead=7a9573759e2efb483c3fa5ad119c285902714323; scripts=; _npmUser=; rep
+         ository=; _npmVersion=11.11.0; description=Memory compression system for Claude Code - persist context across 
+         sessions; directories=; _nodeVersion=25.8.1; dependencies=; _hasShrinkwrap=False; devDependencies=; trustedDep
+         endencies=System.Object[]; optionalDependencies=; _npmOperationalInternal=}
+[32;1m12.7.5 : [0m@{name=claude-mem; version=12.7.5; description=Memory compression system for Claude Code - persist context acr
+         oss sessions; keywords=System.Object[]; author=; license=AGPL-3.0; repository=; homepage=https://github.com/th
+         edotmack/claude-mem#readme; bugs=; type=module; bin=; exports=; engines=; scripts=; np=; dependencies=; devDep
+         endencies=; optionalDependencies=; trustedDependencies=System.Object[]; gitHead=e3cc382fa28a605d12c7245a27d49a
+         6b27d5db1f; _id=claude-mem@12.7.5; _nodeVersion=25.8.1; _npmVersion=11.11.0; dist=; _npmUser=; directories=; m
+         aintainers=System.Object[]; _npmOperationalInternal=; _hasShrinkwrap=False}
+

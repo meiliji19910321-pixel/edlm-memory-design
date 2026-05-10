@@ -1,0 +1,25 @@
+# 排除大部分文件
+*
+!plugins/
+!memory/
+!settings.json
+!CLAUDE.md
+!MEMORY.md
+!.gitignore
+
+# 保留特定目录
+!plugins/edlm_memory/**
+!memory/corpora/memory.db
+!memory/**
+
+# 排除 cache 和 node_modules
+cache/**
+node_modules/**
+file-history/**
+backups/**
+plans/**
+skills/**
+commands/**
+*.log
+*.tmp
+.DS_Store

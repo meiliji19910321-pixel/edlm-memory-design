@@ -1,0 +1,1595 @@
+          "description": "Restricts browser mode to attach-only behavior without starting local browser processes. Use this when all browser sessions are externally managed by a remote CDP provider."
+        "providers": {
+            "maxProviderConcurrency": {
+            "maxRefsPerProvider": {
+              "provider": {
+              "provider",
+          "description": "Named auth profiles (provider + mode + optional email)."
+          "description": "Ordered auth profile IDs per provider (used for automatic failover)."
+            "billingBackoffHoursByProvider": {
+              "description": "Optional per-provider overrides for billing backoff (hours)."
+              "description": "Base backoff (minutes) for high-confidence auth_permanent failures (default: 10). Keep this shorter than billing so providers recover automatically after transient upstream auth incidents."
+              "description": "Maximum same-provider auth-profile rotations allowed for overloaded errors before switching to model fallback (default: 1)."
+              "description": "Fixed delay in milliseconds before retrying an overloaded provider/profile rotation (default: 0)."
+              "description": "Maximum same-provider auth-profile rotations allowed for rate-limit errors before switching to model fallback (default: 1)."
+      "description": "Authentication profile root used for multi-profile provider credentials and cooldown-based failover ordering. Keep profiles minimal and explicit so automatic failover behavior stays auditable."
+          "description": "Controls provider catalog behavior: \"merge\" keeps built-ins and overlays your custom providers, while \"replace\" uses only your configured providers. In \"merge\", matching provider IDs preserve non-empty agent models.json baseUrl values, while apiKey values are preserved only when the provider is not SecretRef-managed in current config/auth-profile context; SecretRef-managed providers refresh apiKey from current source markers, and matching model contextWindow/maxTokens use the higher value between explicit and implicit entries."
+        "providers": {
+                "title": "Model Provider Base URL",
+                "description": "Base URL for the provider endpoint used to serve model requests for that provider entry. Use HTTPS endpoints and keep URLs environment-specific through config templating where needed."
+              "apiKey": {
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                "title": "Model Provider API Key",
+                "description": "Provider credential used for API-key based authentication when the provider requires direct key auth. Use secret/env substitution and avoid storing real keys in committed config files."
+                "title": "Model Provider Auth Mode",
+                "description": "Selects provider auth style: \"api-key\" for API key auth, \"token\" for bearer token auth, \"oauth\" for OAuth credentials, and \"aws-sdk\" for AWS credential resolution. Match this to your provider requirements."
+                "title": "Model Provider API Adapter",
+                "description": "Provider API adapter selection controlling request/response compatibility handling for model calls. Use the adapter that matches your upstream provider protocol to avoid feature mismatch."
+                "title": "Model Provider Context Window",
+                "description": "Default native context window applied to models under this provider when a model entry does not set contextWindow. Use model-level contextWindow for per-model overrides."
+                "title": "Model Provider Context Tokens",
+                "description": "Default effective runtime context cap applied to models under this provider when a model entry does not set contextTokens. Use this when runtime should budget below the native contextWindow."
+                "title": "Model Provider Max Tokens",
+                "description": "Default maximum output token budget applied to models under this provider when a model entry does not set maxTokens."
+                "title": "Model Provider Request Timeout",
+                "description": "Optional per-provider model request timeout in seconds. Applies to provider HTTP fetches, including connect, headers, body, and total request abort handling. Use this for slow local or self-hosted model servers instead of changing global agent timeouts."
+                "title": "Model Provider Inject num_ctx (OpenAI Compat)",
+                "description": "Controls whether OpenClaw injects `options.num_ctx` for Ollama providers configured with the OpenAI-compatible adapter (`openai-completions`). Default is true. Set false only if your proxy/upstream rejects unknown `options` payload fields."
+                            "provider": {
+                            "provider",
+                            "provider": {
+                            "provider",
+                            "provider": {
+                            "provider",
+                "title": "Model Provider Headers",
+                "description": "Static HTTP headers merged into provider requests for tenant routing, proxy auth, or custom gateway requirements. Use this sparingly and keep sensitive header values in secrets."
+                "title": "Model Provider Authorization Header",
+                "description": "When true, credentials are sent via the HTTP Authorization header even if alternate auth is possible. Use this only when your provider or proxy explicitly requires Authorization forwarding."
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                    "title": "Model Provider Request Headers",
+                    "description": "Extra headers merged into provider requests after default attribution and auth resolution."
+                            "const": "provider-default",
+                            "title": "Model Provider Request Auth Mode",
+                            "description": "Auth override mode: \"provider-default\", \"authorization-bearer\", or \"header\"."
+                            "title": "Model Provider Request Auth Mode",
+                            "description": "Auth override mode: \"provider-default\", \"authorization-bearer\", or \"header\"."
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                            "title": "Model Provider Request Bearer Token",
+                            "title": "Model Provider Request Auth Mode",
+                            "description": "Auth override mode: \"provider-default\", \"authorization-bearer\", or \"header\"."
+                            "title": "Model Provider Request Auth Header Name",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                            "title": "Model Provider Request Auth Header Value",
+                            "title": "Model Provider Request Auth Header Prefix",
+                    "title": "Model Provider Request Auth Override",
+                    "description": "Override provider request authentication behavior for this provider."
+                            "title": "Model Provider Request Proxy Mode",
+                            "description": "Proxy override mode for model-provider requests: \"env-proxy\" or \"explicit-proxy\"."
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS CA",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS Cert",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS Key",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS Passphrase",
+                                "title": "Model Provider Request Proxy TLS Server Name",
+                                "title": "Model Provider Request Proxy TLS Skip Verify",
+                            "title": "Model Provider Request Proxy TLS",
+                            "title": "Model Provider Request Proxy Mode",
+                            "description": "Proxy override mode for model-provider requests: \"env-proxy\" or \"explicit-proxy\"."
+                            "title": "Model Provider Request Proxy URL",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS CA",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS Cert",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS Key",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                "title": "Model Provider Request Proxy TLS Passphrase",
+                                "title": "Model Provider Request Proxy TLS Server Name",
+                                "title": "Model Provider Request Proxy TLS Skip Verify",
+                            "title": "Model Provider Request Proxy TLS",
+                    "title": "Model Provider Request Proxy",
+                    "description": "Optional proxy override for model-provider requests. Use \"env-proxy\" to honor environment proxy settings or \"explicit-proxy\" to route through a specific proxy URL."
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                        "title": "Model Provider Request TLS CA",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                        "title": "Model Provider Request TLS Cert",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                        "title": "Model Provider Request TLS Key",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                        "title": "Model Provider Request TLS Passphrase",
+                        "title": "Model Provider Request TLS Server Name",
+                        "title": "Model Provider Request TLS Skip Verify",
+                    "title": "Model Provider Request TLS",
+                    "title": "Model Provider Request Allow Private Network",
+                    "description": "When true, allow HTTPS to the model base URL when DNS resolves to private, CGNAT, or similar ranges, via the provider HTTP fetch guard (fetchWithSsrFGuard). OpenAI Responses WebSocket reuses request for headers/TLS but does not use that fetch SSRF path. Use only for operator-controlled self-hosted OpenAI-compatible endpoints (LAN, overlay, split DNS). Default is false."
+                "title": "Model Provider Request Overrides",
+                "description": "Optional request overrides for model-provider requests, including extra headers, auth overrides, proxy routing, TLS client settings, and optional allowPrivateNetwork for trusted self-hosted endpoints. Use these only when your upstream or enterprise network path requires transport customization."
+                "title": "Model Provider Model List",
+                "description": "Declared model list for a provider including identifiers, metadata, provider-specific params, and optional compatibility/cost hints. Keep IDs exact to provider catalog values so selection and fallback resolve correctly."
+          "title": "Model Providers",
+          "description": "Provider map keyed by provider ID containing connection/auth settings and concrete model definitions. Use stable provider keys so references from agents and tooling remain portable across environments."
+      "description": "Model catalog root for provider definitions, merge/replace behavior, and optional Bedrock discovery integration. Keep provider definitions explicit and validated before relying on production failover paths."
+                      "description": "Primary model (provider/model)."
+                      "description": "Ordered fallback models (provider/model). Used when the primary model fails."
+                      "description": "Optional image model (provider/model) used when the primary model lacks image input."
+                      "description": "Ordered fallback image models (provider/model)."
+                      "description": "Optional image-generation model (provider/model) used by the shared image generation capability."
+                      "description": "Ordered fallback image-generation models (provider/model)."
+                      "description": "Default provider request timeout in milliseconds for image_generate calls. Per-call timeoutMs overrides this."
+                      "description": "Optional video-generation model (provider/model) used by the shared video generation capability."
+                      "description": "Ordered fallback video-generation models (provider/model)."
+                      "description": "Optional music-generation model (provider/model) used by the shared music generation capability."
+                      "description": "Ordered fallback music-generation models (provider/model)."
+            "mediaGenerationAutoProviderFallback": {
+              "title": "Media Generation Auto Provider Fallback",
+              "description": "When true (default), shared image, music, and video generation automatically appends other auth-backed provider defaults after explicit primary/fallback refs. Set false to disable implicit cross-provider fallback while keeping explicit fallbacks."
+                      "description": "Optional PDF model (provider/model) for the PDF analysis tool. Defaults to imageModel, then session model."
+                      "description": "Ordered fallback PDF models (provider/model)."
+              "description": "Configured model catalog (keys are full provider/model IDs)."
+                  "description": "Shared GPT-5-family prompt overlay applied to matching model ids across providers such as OpenAI, OpenRouter, OpenCode, Codex, and compatible gateways."
+              "description": "Provider-independent prompt overlays applied by model family before provider-specific prompt hooks."
+                      "description": "Enables image/audio memory indexing from extraPaths. This currently requires Gemini embedding-2, keeps the default memory roots Markdown-only, disables memory-search fallback providers, and uploads matching binary content to the configured remote embedding provider."
+                  "description": "Optional multimodal memory settings for indexing image and audio files from configured extra paths. Keep this off unless your embedding model explicitly supports cross-modal embeddings, and set `memorySearch.fallback` to \"none\" while it is enabled. Matching files are uploaded to the configured remote embedding provider during indexing."
+                "provider": {
+                  "title": "Memory Search Provider",
+                  "description": "Selects the embedding backend used to build/query memory vectors: \"openai\", \"gemini\", \"voyage\", \"mistral\", \"bedrock\", \"lmstudio\", \"ollama\", or \"local\". Keep your most reliable provider here and configure fallback for resilience."
+                      "description": "Overrides the embedding API endpoint, such as an OpenAI-compatible proxy or custom Gemini base URL. Use this only when routing through your own gateway or vendor endpoint; keep provider defaults otherwise."
+                    "apiKey": {
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                      "description": "Adds custom HTTP headers to remote embedding requests, merged with provider defaults. Use this for proxy auth and tenant routing headers, and keep values minimal to avoid leaking sensitive metadata."
+                      "description": "Controls concurrent inline embedding requests during non-batch memory indexing. Use a low value for local or small self-hosted providers such as Ollama; batch embedding concurrency is configured separately under remote.batch."
+                          "description": "Enables provider batch APIs for embedding jobs when supported (OpenAI/Gemini), improving throughput on larger index runs. Keep this enabled unless debugging provider batch failures or running very small workloads."
+                          "description": "Limits how many embedding batch jobs run at the same time during indexing (default: 2). Increase carefully for faster bulk indexing, but watch provider rate limits and queue errors."
+                          "description": "Controls how often the system polls provider APIs for batch job status in milliseconds (default: 2000). Use longer intervals to reduce API chatter, or shorter intervals for faster completion detection."
+                          "description": "Sets the maximum wait time for a full embedding batch operation in minutes (default: 60). Increase for very large corpora or slower providers, and lower it to fail fast in automation-heavy flows."
+                  "description": "Backup provider used when primary embeddings fail: \"openai\", \"gemini\", \"voyage\", \"mistral\", \"bedrock\", \"lmstudio\", \"ollama\", \"local\", or \"none\". Set a real fallback for production reliability; use \"none\" only if you prefer explicit failures."
+                  "description": "Embedding model override used by the selected memory provider when a non-default model is required. Set this only when you need explicit recall quality/cost tuning beyond provider defaults."
+                  "description": "Use this optional provider-specific `input_type` value only when the same label should apply to both query and document embedding requests. For asymmetric providers, prefer queryInputType and documentInputType."
+                  "description": "Optional provider-specific `input_type` value for query-time memory embeddings. Use this with OpenAI-compatible asymmetric embedding endpoints that require a query label."
+                  "description": "Optional provider-specific `input_type` value for document and indexing memory embeddings. Use this with OpenAI-compatible asymmetric embedding endpoints that require a passage or document label."
+                  "description": "Provider-specific output vector size override for memory embeddings. Gemini embedding-2 supports 768, 1536, or 3072; Bedrock families such as Titan V2, Cohere V4, and Nova expose their own allowed sizes. Expect a full reindex when you change it because stored vector dimensions must stay consistent."
+                      "description": "Specifies the local embedding model source for local memory search, such as a GGUF file path or `hf:` URI. Use this only when provider is `local`, and verify model compatibility before large index rebuilds."
+                      "description": "Overrides the timeout for inline embedding batches during memory indexing. Leave unset to use provider defaults: 600 seconds for local/self-hosted providers such as local, Ollama, and LM Studio, and 120 seconds for hosted providers."
+                "provider": {
+                  "title": "Compaction Provider",
+                  "description": "Id of a registered compaction provider plugin used for summarization. When set and the provider is registered, its summarize() method is called instead of the built-in summarizeInStages pipeline. Falls back to built-in on provider failure. Leave unset to use the default built-in summarization."
+                  "description": "Optional provider/model override used only for compaction summarization. Set this when you want compaction to run on a different model than the session default, and leave it unset to keep using the primary agent model."
+                      "description": "Optional provider/model override used only for pre-compaction memory flush turns. Set this to a local model such as ollama/qwen3:8b when durable memory extraction should avoid the active session's paid model. The override is exact and does not inherit the active model fallback chain."
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                  "provider": {
+                      "apiKey": {
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                  "provider": {
+                        "provider": {
+                              "const": "provider-defaults"
+                        "providers": {
+                              "apiKey": {
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                      "allowProvider": {
+                  "providers": {
+                        "apiKey": {
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                  "byProvider": {
+                    "title": "Agent Tool Policy by Provider",
+                    "description": "Per-agent provider-specific tool policy overrides for channel-scoped capability control. Use this when a single agent needs tighter restrictions on one provider than others."
+          "description": "Global tool denylist that blocks listed tools even when profile or provider rules would allow them. Use deny rules for emergency lockouts and long-term defense-in-depth."
+        "byProvider": {
+          "title": "Tool Policy by Provider",
+          "description": "Per-provider tool allow/deny overrides keyed by channel/provider ID to tailor capabilities by surface. Use this when one provider needs stricter controls than global tool policy."
+                "provider": {
+                  "title": "Web Search Provider",
+                  "description": "Search provider id. Auto-detected from available API keys if omitted."
+                "apiKey": {
+                            "provider": {
+                            "provider",
+                            "provider": {
+                            "provider",
+                            "provider": {
+                            "provider",
+                "provider": {
+                  "title": "Web Fetch Provider",
+                  "description": "Web fetch fallback provider id."
+                    "apiKey": {
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+                                "provider": {
+                                "provider",
+          "description": "Web-tool policy grouping for search/fetch providers, limits, and fallback behavior tuning. Keep enabled settings aligned with API key availability and outbound networking policy."
+                  "provider": {
+                        "const": "provider"
+                  "providerOptions": {
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                "const": "provider-default"
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+              "description": "Shared fallback model list used by media understanding tools when modality-specific model lists are not set. Keep this aligned with available multimodal providers to avoid runtime fallback churn."
+                  "description": "Maximum accepted image payload size in bytes before the item is skipped or truncated by policy. Keep limits realistic for your provider caps and infrastructure bandwidth."
+                "providerOptions": {
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                              "const": "provider-default"
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                      "provider": {
+                            "const": "provider"
+                      "providerOptions": {
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                    "const": "provider-default"
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                  "description": "Maximum accepted audio payload size in bytes before processing is rejected or clipped by policy. Set this based on expected recording length and upstream provider limits."
+                  "description": "Preferred language hint for audio understanding/transcription when provider support is available. Set this to improve recognition accuracy for known primary languages."
+                "providerOptions": {
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                      "description": "Additional HTTP headers merged into audio provider requests after provider defaults. Use this for tenant routing or proxy integration headers, and keep secrets in env-backed values."
+                              "const": "provider-default",
+                              "description": "Auth override mode for audio requests: \"provider-default\" keeps the normal provider auth, \"authorization-bearer\" forces an Authorization bearer token, and \"header\" sends a custom header/value pair."
+                              "description": "Auth override mode for audio requests: \"provider-default\" keeps the normal provider auth, \"authorization-bearer\" forces an Authorization bearer token, and \"header\" sends a custom header/value pair."
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                              "description": "Auth override mode for audio requests: \"provider-default\" keeps the normal provider auth, \"authorization-bearer\" forces an Authorization bearer token, and \"header\" sends a custom header/value pair."
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                              "description": "Header value used when audio request auth.mode is header. Keep secrets in env-backed values and avoid duplicating provider-default auth unnecessarily."
+                      "description": "Optional auth override for audio provider requests. Use this when the upstream expects a non-default bearer token or custom auth header shape."
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                              "description": "Explicit proxy URL for audio provider traffic when proxy.mode is explicit-proxy. Keep credentials out of inline URLs when possible and prefer secret-backed env injection."
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                      "description": "Proxy transport override for audio requests. Use env-proxy to respect process proxy settings, or explicit-proxy to force a dedicated proxy URL for this provider path."
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                      "description": "Direct TLS client settings for audio provider requests, including custom CA trust, client certs, or SNI overrides for managed gateways and internal endpoints."
+                  "description": "Low-level HTTP request overrides for audio providers, including custom headers, auth, proxy routing, and TLS client settings. Use this for proxy-backed or self-hosted transcription endpoints when plain baseUrl/apiKey fields are not enough."
+                      "provider": {
+                            "const": "provider"
+                      "providerOptions": {
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                    "const": "provider-default"
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                  "description": "Maximum accepted video payload size in bytes before policy rejection or trimming occurs. Tune this to provider and infrastructure limits to avoid repeated timeout/failure loops."
+                  "description": "Instruction template for video understanding describing desired summary granularity and focus areas. Keep this stable so output quality remains predictable across model/provider fallbacks."
+                "providerOptions": {
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                              "const": "provider-default"
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                      "provider": {
+                            "const": "provider"
+                      "providerOptions": {
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                        "provider": {
+                                        "provider",
+                                    "const": "provider-default"
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                              "provider": {
+                                              "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+                                          "provider": {
+                                          "provider",
+              "description": "Legacy override: allow cross-context sends across all providers."
+                "allowWithinProvider": {
+                  "title": "Allow Cross-Context (Same Provider)",
+                  "description": "Allow sends to other channels within the same provider (default: true)."
+                "allowAcrossProviders": {
+                  "title": "Allow Cross-Context (Across Providers)",
+                  "description": "Allow sends across different providers (default: false)."
+              "description": "Sender allow rules for elevated tools, usually keyed by channel/provider identity formats. Use narrow, explicit identities so elevated commands cannot be triggered by unintended users."
+                    "description": "Channel/provider identifier this binding applies to, such as `telegram`, `discord`, or a plugin channel ID. Use the configured channel key exactly so binding evaluation works reliably."
+                        "description": "Conversation identifier used with peer matching, such as a chat ID, channel ID, or group ID from the provider. Keep this exact to avoid silent non-matches."
+                    "description": "Optional team/workspace ID constraint used by providers that scope chats under teams. Add this when you need bindings isolated to one workspace context."
+                    "description": "Optional role-based filter list used by providers that attach roles to chat context. Use this to route privileged or operational role traffic to specialized agents."
+                    "description": "Channel/provider identifier this binding applies to, such as `telegram`, `discord`, or a plugin channel ID. Use the configured channel key exactly so binding evaluation works reliably."
+                        "description": "Conversation identifier used with peer matching, such as a chat ID, channel ID, or group ID from the provider. Keep this exact to avoid silent non-matches."
+                    "description": "Optional team/workspace ID constraint used by providers that scope chats under teams. Add this when you need bindings isolated to one workspace context."
+                    "description": "Optional role-based filter list used by providers that attach roles to chat context. Use this to route privileged or operational role traffic to specialized agents."
+      "description": "Top-level media behavior shared across providers and tools that handle inbound files. Keep defaults unless you need stable filenames for external processing pipelines or longer-lived inbound media retention."
+              "description": "Per-channel queue mode overrides keyed by provider id (for example telegram, discord, slack). Use this when one channel’s traffic pattern needs different queue behavior than global defaults."
+              "description": "Per-channel debounce overrides for queue behavior keyed by provider id. Use this to tune burst handling independently for chat surfaces with different pacing."
+              "description": "Per-channel inbound debounce overrides keyed by provider id in milliseconds. Use this where some providers send message fragments more aggressively than others."
+          "description": "Direct inbound debounce settings used before queue/turn processing starts. Configure this for provider-specific rapid message bursts from the same sender."
+            "provider": {
+                  "provider": {
+                        "const": "provider-defaults"
+                    "description": "Provider-neutral persona prompt intent. Providers decide whether and how to map this into request instructions."
+                  "providers": {
+                        "apiKey": {
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                                    "provider": {
+                                    "provider",
+                    "title": "TTS Persona Provider Bindings",
+                    "description": "Provider-specific TTS persona bindings keyed by speech provider id. These merge over messages.tts.providers for the active persona."
+                "description": "One TTS persona. Use provider-specific bindings for exact voices/models and prompt templates."
+              "description": "Named TTS personas that define stable spoken identity plus provider-specific speech bindings."
+                "allowProvider": {
+            "providers": {
+                  "apiKey": {
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                    "title": "TTS Provider API Key",
+                    "description": "Provider API key used by that speech provider when its plugin requires authenticated TTS access."
+                "title": "TTS Provider Config",
+                "description": "Provider-specific TTS configuration for one speech provider id. Keep fields scoped to the plugin that owns that provider."
+              "title": "TTS Provider Settings",
+              "description": "Provider-specific TTS settings keyed by speech provider id. Use this instead of bundled provider-specific top-level keys so speech plugins stay decoupled from core config schema."
+          "description": "Registers native skill commands so users can invoke skills directly from provider command menus where supported. Keep aligned with your skill policy so exposed commands match what operators expect."
+          "description": "Defines elevated command allow rules by channel and sender for owner-level command surfaces. Use narrow provider-specific identities so privileged commands are not exposed to broad chat audiences."
+      "description": "Controls chat command surfaces, owner gating, and elevated command access behavior across providers. Keep defaults unless you need stricter operator controls or broader command availability."
+                    "description": "Channel/provider ID used for forwarded approval delivery, such as discord, slack, or a plugin channel id. Use valid channel IDs only so approvals do not silently fail due to unknown routes."
+                    "description": "Destination identifier inside the target channel (channel ID, user ID, or thread root depending on provider). Verify semantics per provider because destination format differs across channel integrations."
+                    "description": "Channel/provider ID used for forwarded plugin approval delivery, such as discord, slack, or a plugin channel id."
+                    "description": "Destination identifier inside the target channel (channel ID, user ID, or thread root depending on provider)."
+          "description": "Maps canonical identities to provider-prefixed peer IDs so equivalent users resolve to one DM thread (example: telegram:123456). Use this when the same human appears across multiple channels or accounts."
+          "description": "Provides channel-specific reset overrides keyed by provider/channel id for fine-grained behavior control. Use this only when one channel needs exceptional reset behavior beyond type-level policies."
+                        "description": "Matches rule application to a specific channel/provider id (for example discord, telegram, slack). Use this when one channel should permit or deny delivery independently of others."
+              "description": "Default inactivity window in hours for thread-bound sessions across providers/channels (0 disables idle auto-unfocus). Default: 24."
+              "description": "Optional hard max age in hours for thread-bound sessions across providers/channels (0 disables hard cap). Default: 0."
+          "description": "Shared defaults for thread-bound session routing behavior across providers that support thread focus workflows. Configure global defaults here and override per channel only when behavior differs."
+                    "provider": {
+                    "provider",
+                    "provider": {
+                    "provider",
+                    "provider": {
+                    "provider",
+                "description": "Destination identifier inside the selected channel when mapping replies should route to a fixed target. Verify provider-specific destination formats before enabling production mappings."
+              "description": "Renewal cadence in minutes for Gmail watch subscriptions to prevent expiration. Set below provider expiration windows and monitor renew failures in logs."
+      "description": "Channel provider configurations plus shared defaults that control access policies, heartbeat visibility, and per-surface behavior. Keep defaults centralized and override per provider only where required.",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                    "provider": {
+                          "provider": {
+                                "const": "provider-defaults"
+                          "providers": {
+                                "apiKey": {
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                        "allowProvider": {
+                    "providers": {
+                          "apiKey": {
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                                      "provider": {
+                                      "provider",
+                            "provider": {
+                            "provider",
+                            "provider": {
+                            "provider",
+                            "provider": {
+                            "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                          "provider": {
+                                "provider": {
+                                      "const": "provider-defaults"
+                                "providers": {
+                                      "apiKey": {
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                                                  "provider": {
+                                                  "provider",
+                              "allowProvider": {
+                          "providers": {
+                                "apiKey": {
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                            "provider": {
+                                            "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                                  "provider": {
+                                  "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                "provider": {
+                "providers": {
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                      "provider": {
+                      "providers": {
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                    "provider": {
+                    "provider",
+                    "provider": {
+                    "provider",
+                    "provider": {
+                    "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                "provider": {
+                "apiKey": {
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+                              "provider": {
+                              "provider",
+        "provider": {
+          "title": "Talk Active Provider",
+          "description": "Active Talk provider id (for example \"acme-speech\")."
+        "providers": {
+              "apiKey": {
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                "title": "Talk Provider API Key",
+                "description": "Provider API key for Talk mode."
+            "title": "Talk Provider Config",
+            "description": "Provider-owned Talk config fields for the matching provider id."
+          "title": "Talk Provider Settings",
+          "description": "Provider-specific Talk settings keyed by provider id. During migration, prefer this over legacy talk.* keys."
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+              "description": "Trusted-proxy auth header mapping for upstream identity providers that inject user claims. Use only with known proxy CIDRs and strict header allowlists to prevent spoofed identity headers."
+          "description": "How many minutes a connected channel can go without provider-proven transport activity before the health monitor treats it as a stale socket and triggers a restart. Default: 30."
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                        "provider": {
+                        "provider",
+                  "description": "Sets the idle delay before an opt-in `memory.qmd.update.startup: \"idle\"` refresh runs (default: 120000). Increase to keep cold-start CPU available for channels and providers."
+              "apiKey": {
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+                          "provider": {
+                          "provider",
+          "description": "Selects which plugins own exclusive runtime slots such as memory so only one plugin provides that capability. Use explicit slot ownership to avoid overlapping providers with conflicting behavior."
+                    "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                    "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                    "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                        "providerFilter": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                    "apiKey": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                        "apiKey": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+            "minimax": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                        "apiKey": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                        "apiKey": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                        "apiKey": {
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."
+                      "description": "Controls whether this plugin may mutate prompts through typed hooks. Set false to block `before_prompt_build` and ignore prompt-mutating fields from legacy `before_agent_start`, while preserving legacy `modelOverride` and `providerOverride` behavior."
+                      "description": "Explicitly allows this plugin to request provider/model overrides in background subagent runs. Keep false unless the plugin is trusted to steer model selection."
+                      "description": "Allowed override targets for trusted plugin subagent runs as canonical \"provider/model\" refs. Use \"*\" only when you intentionally allow any model."

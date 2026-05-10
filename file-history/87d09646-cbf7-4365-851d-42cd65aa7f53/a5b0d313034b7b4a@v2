@@ -1,0 +1,98 @@
+# 方案：让 claude-mem 作为主要记忆系统
+
+## Context
+
+用户希望用 claude-mem 插件实现永久记忆 + 向量检索。现状：
+- claude-mem 插件已安装并启用（v12.6.5）
+- Worker/MCP 服务未运行
+- Chroma 向量数据库未运行
+- transcript-watch 只监听 Codex，不监听 Claude Code
+
+核心问题不是「搭建新系统」，而是「让已有的 claude-mem 正确运行」。
+
+## 实施步骤
+
+### 步骤 1：安装并启动 Chroma 向量数据库
+
+```powershell
+# 安装 chroma (Python)
+pip install chromadb
+
+# 启动 Chroma (Windows 后台)
+Start-Process python -ArgumentList "-m chromadb" -WindowStyle Hidden
+
+# 验证
+curl http://127.0.0.1:8000/api/v1/heartbeat
+```
+
+**验证**：返回 `{"success":true}` 即成功。
+
+### 步骤 2：配置 CLAUDE_CODE_PATH
+
+编辑 `C:\Users\Administrator\.claude-mem\settings.json`，添加：
+```json
+"CLAUDE_CODE_PATH": "C:\\Users\\Administrator\\.claude"
+```
+
+使 claude-mem 能定位 Claude Code 的 session 数据。
+
+### 步骤 3：修复 transcript-watch 配置
+
+编辑 `C:\Users\Administrator\.claude-mem\transcript-watch.json`，在 `watches` 数组中添加 Claude Code 的路径：
+
+```json
+{
+  "name": "claude-code",
+  "path": "~/.claude/projects/**/*.jsonl",
+  "schema": "codex",
+  "startAtEnd": true
+}
+```
+
+### 步骤 4：启动 claude-mem Worker 服务
+
+```powershell
+# 查看 worker 启动方式
+node D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\scripts\worker-cli.js --help
+
+# 启动 worker（后台运行）
+Start-Process node -ArgumentList "D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\scripts\worker-cli.js" -WindowStyle Hidden
+```
+
+### 步骤 5：验证记忆是否写入
+
+重启一个 Claude Code 会话，执行几次对话后，检查：
+
+```powershell
+# 查看日志确认 worker 活动
+Get-Content C:\Users\Administrator\.claude-mem\logs\claude-mem-$(Get-Date -Format "yyyy-MM-dd").log -Tail 20
+
+# 确认 corpora 目录有 Chroma 数据
+Get-ChildItem C:\Users\Administrator\.claude-mem\corpora
+```
+
+### 步骤 6：验证向量检索
+
+用 `/mem` 命令或 `mem-search` skill 测试搜索。
+
+## 关键文件
+
+| 文件 | 作用 |
+|------|------|
+| `C:\Users\Administrator\.claude-mem\settings.json` | 插件配置 |
+| `C:\Users\Administrator\.claude-mem\transcript-watch.json` | session 监听配置 |
+| `D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\scripts\worker-cli.js` | Worker 启动脚本 |
+| `D:\CLAUDE.MD\plugins\marketplaces\thedotmack\plugin\skills\mem-search\SKILL.md` | 向量搜索技能 |
+
+## 风险
+
+- Chroma 在 Windows 上可能需要额外配置
+- Worker 服务断开后需要手动重启（或设置 Windows 服务）
+
+## 验证
+
+1. Chroma heartbeat 返回 success
+2. Worker 日志显示 `MCP server listening on 37777`
+3. corpora/ 目录有文件生成
+4. 新对话后 `claude-mem.db` 有新 observation 写入
+5. `/mem` 命令能搜到历史内容

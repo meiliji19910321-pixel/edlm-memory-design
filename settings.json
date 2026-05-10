@@ -1,0 +1,66 @@
+{
+  "env": {
+    "MEMORY_PATH": "D:\\CLAUDE.MD\\mem",
+    "PYTHONPATH": "D:\\CLAUDE.MD",
+    "ANTHROPIC_BASE_URL": "https://api.minimaxi.com/anthropic",
+    "ANTHROPIC_AUTH_TOKEN": "sk-cp-OY8wuEI7s5aPMiIejVZa1GRfg80feS_EE1TqiPla_ZusanLcGOh10yNCm5seO4WiR5P2nQYqFjHNlp5pySQYcHuw1Ch9v2uD98D4pbxf4-lKcwc_Mx61g18",
+    "ANTHROPIC_DEFAULT_HAIKU_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_OPUS_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_MODEL": "MiniMax-M2.7",
+    "ANTHROPIC_DEFAULT_SONNET_MODEL": "MiniMax-M2.7",
+    "API_TIMEOUT_MS": "3000000",
+    "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
+  },
+  "autoMemoryEnabled": true,
+  "autoMemoryDirectory": "D:\\CLAUDE.MD\\memory\\auto",
+  "autoDreamEnabled": true,
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pwsh -NoProfile -Command \"$b = Get-Content 'D:\\CLAUDE.MD\\memory\\briefing\\current.md' -ErrorAction SilentlyContinue; $p = Get-ChildItem 'D:\\CLAUDE.MD\\memory\\patterns\\*.md' -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt (Get-Date).AddDays(-7) } | Select-Object -First 3 | Get-Content; $m = 'D:\\CLAUDE.MD\\memory\\me.md'; $c = 'D:\\CLAUDE.MD\\memory\\core.md'; $me = if (Test-Path $m) { Get-Content $m } else { '' }; $co = if (Test-Path $c) { Get-Content $c } else { '' }; Write-Output ('MEMORY_LOADED|' + $me + '|END_ME|' + $co + '|END_CO|' + $b + '|END_B|' + $p)\"",
+            "timeout": 30,
+            "statusMessage": "加载记忆..."
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pwsh -NoProfile -File D:/CLAUDE.MD/plugins/edlm_memory/stop_hook.ps1",
+            "timeout": 30,
+            "statusMessage": "保存会话摘要..."
+          }
+        ]
+      }
+    ],
+    "SessionEnd": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pwsh -NoProfile -Command \"& 'C:\\Users\\Administrator\\AppData\\Local\\Programs\\Python\\Python312\\python.exe' 'D:\\CLAUDE.MD\\plugins\\edlm_memory\\edlm_memory.py' rotate\"",
+            "timeout": 60,
+            "statusMessage": "执行记忆衰减检查..."
+          }
+        ]
+      }
+    ]
+  },
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "allow": [
+      "Read(D:\\CLAUDE.MD\\**)",
+      "Write(D:\\CLAUDE.MD\\**)"
+    ]
+  },
+  "enabledPlugins": {
+    "claude-mem@thedotmack": true
+  },
+  "theme": "dark"
+}

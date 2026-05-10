@@ -1,0 +1,9 @@
+{
+  "id": "3",
+  "subject": "配置 Hooks 并停用 claude-mem",
+  "description": "settings.json 中配置 palaia hooks，停用 claude-mem 插件",
+  "activeForm": "配置 hooks",
+  "status": "pending",
+  "blocks": [],
+  "blockedBy": []
+}

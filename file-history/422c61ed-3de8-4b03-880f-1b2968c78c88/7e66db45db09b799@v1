@@ -1,0 +1,11 @@
+{
+  "thedotmack": {
+    "source": {
+      "source": "github",
+      "repo": "thedotmack/claude-mem"
+    },
+    "installLocation": "D:\\CLAUDE.MD\\plugins\\marketplaces\\thedotmack",
+    "lastUpdated": "2026-05-06T02:29:40.635Z",
+    "autoUpdate": true
+  }
+}
