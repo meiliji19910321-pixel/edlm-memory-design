@@ -1,12 +1,21 @@
-# EDLM + PERMANENT MEMORY 融合框架
+# EDLM + Ruflo 融合记忆框架 v2.0
 
-最后更新：2026-05-10
+最后更新：2026-05-13
 
 ## 框架概述
 
-**全称**：Experience-Driven Learning Memory + PERMANENT MEMORY
-**融合来源**：claude-mem (5钩子自动化) + mempalace (verbatim存储) + palaia (三层衰减+类型权重)
-**核心目标**：AI自主学习能力 + 永久记忆存储
+**全称**：Experience-Driven Learning Memory + Ruflo AgentDB
+**融合来源**：EDLM（内容组织）+ Ruflo AgentDB（向量搜索索引）
+**核心目标**：AI自主学习能力 + 永久记忆存储 + 语义检索
+
+### v2.0 变更（相比 v1.0）
+
+- 移除 SQLite/sqlite-vec 依赖 → 纯文件操作 + Ruflo 向量索引
+- 移除 FTS5 全文搜索 → Ruflo HNSW 语义搜索
+- 修复 rotation 逻辑 bug（列索引错误）
+- 修复 search 命令（v1.0 忽略查询词）
+- 新增 Ruflo memory_store 同步接口
+- 新增会话上下文加载函数
 
 ---
 
@@ -17,7 +26,9 @@
      ↓
 AI 执行 → 结果 → 自判断 SUCCESS/FAILURE
      ↓
-存入 experience（含 tier/decay_score/type/weight）
+存入 experience（含 tier/decay_score/type/weight）→ 写入 Markdown 文件
+     ↓
+同时索引到 Ruflo AgentDB（edlm-memory namespace）
      ↓
 定期提取 pattern → 更新 patterns/
      ↓
@@ -34,16 +45,17 @@ D:\CLAUDE.MD\
 │   ├── me.md                     # L0: 身份（始终加载）
 │   ├── core.md                   # L1: 全局索引（始终加载）
 │   ├── experiences\              # 经验库（核心）
-│   │   └── {YYYY-MM}\            # 按月组织
-│   │       └── exp-{id}.md      # 每条经验
-│   ├── patterns\                 # 成功模式（palaia 衰减）
-│   │   └── {domain}.md          # 按领域组织 hot/warm/cold
+│   │   └── {YYYY-MM}\
+│   │       └── exp-{id}.md       # 每条经验（frontmatter + body）
+│   ├── patterns\                 # 成功模式
+│   │   └── pat-{domain}-{date}.md
 │   ├── briefing\                 # Session 摘要
 │   │   ├── current.md            # 本次会话摘要
 │   │   └── history\YYYY-MM-DD.md # 历史会话摘要
-│   └── archive\                  # COLD 层（30天+归档，不删）
-└── corpora\
-    └── memory.db                 # SQLite + sqlite-vec（~37MB/10K向量）
+│   ├── archive\                  # COLD 层（30天+归档，不删）
+│   └── .edlm\                    # 融合框架元数据
+│       ├── config.json           # 衰减参数/类型权重/搜索配置
+│       └── skills\               # 自主升级技能存储
 ```
 
 ---
@@ -52,28 +64,26 @@ D:\CLAUDE.MD\
 
 ```markdown
 ---
-id: exp-2026-0510-001
+id: exp-20260510-xxxxxxxx
 date: 2026-05-10
 goal: "下载 Git 到 D 盘并绑定 GitHub"
 domain: 系统运维
-tier: hot                    # hot | warm | cold（palaia 衰减）
-type: process               # memory | decision | process（权重不同）
-weight: 1.5                  # process=1.5, decision=1.2, memory=1.0
-decay_score: 1.0
+tier: hot
+type: process
+weight: 1.5
 outcome: SUCCESS
-success_factors:
-  - 正确使用 D:\Apps\Git\usr\bin\ssh.exe
-  - 先添加 known_hosts 再连接
+derived_pattern: SSH 配置时，私钥必须在默认路径下
+success_factors: ["正确使用 ssh.exe 路径", "先生成密钥再添加"]
 failure_patterns: []
-derived_pattern: "SSH 配置失败时，先检查 known_hosts 是否包含目标主机"
+decay_score: 1.0
 last_access: 2026-05-10
 access_count: 1
 validation_count: 0
+tags: Git,GitHub,SSH
+created_at: 2026-05-10T01:40:05
 ---
 
-## 执行过程
-[500字以内摘要]（type=process时）
-[完整verbatim记录]（type=decision 或 override时）
+[执行过程内容]
 ```
 
 ---
@@ -82,59 +92,56 @@ validation_count: 0
 
 ```markdown
 ---
-id: pat-git-ssh
+id: pat-系统运维-20260510
 tier: hot
 type: process
 weight: 1.5
 domain: 系统运维
-decay_score: 0.88
+decay_score: 1.0
 last_access: 2026-05-10
-access_count: 3
+access_count: 1
 validation_count: 3
-derived_from: [exp-2026-0510-001]
+derived_from: ["exp-xxx", "exp-yyy"]
 ---
 
-# Git + SSH 故障排查模式
+# Pattern: 系统运维
 
-## 触发条件
-- Git SSH 连接失败（Permission denied）
-- 私钥已添加 GitHub 但连接不上
+## 成功因素
+- 因素1
+- 因素2
 
-## 首选解决方案
-1. `ssh -T git@github.com` 检查连接
-2. 确认 `~\.ssh\known_hosts` 包含 github.com
-3. 确认私钥在 `~\.ssh\` 下（默认读取路径）
-4. 用 `ssh -v` 调试模式排查
+## 适用场景
+- 场景描述
 
-## 验证方式
-返回 "Hi {username}!" 即成功
-
-## 自主升级条件
-validation_count >= 5 → 写入 `D:\CLAUDE.MD\skills\{domain}\SKILL.md`
+## 验证状态
+validation_count >= 5 时可写入 skills/
 ```
 
 ---
 
-## palaia 三层衰减机制
+## 衰减机制
+
+### 衰减公式
+
+```python
+decay_score = exp(-λ * days_since_access) * (1 + log(1 + access_count))
+```
+
+- λ = 0.1（可在 config.json 中调整）
+- 每次访问时更新 `last_access` 和 `access_count`
 
 ### 层级定义
 
 | 层级 | 定义 | decay_score | 默认搜索 |
 |------|------|-------------|----------|
-| **HOT** | < 7 天 或 score >= 0.5 | 0.5 ~ 1.0 | ✅ 始终 |
-| **WARM** | 7-30 天 或 score >= 0.1 | 0.1 ~ 0.5 | ✅ 默认 |
-| **COLD** | > 30 天 且 score < 0.1 | 0.0 ~ 0.1 | ❌ 仅 --all |
-
-### 衰减公式
-
-```python
-decay_score = exp(-0.1 * days_since_access) * (1 + log(1 + access_count))
-```
+| **HOT** | < 7 天 或 score >= 0.5 | 0.5 ~ 1.0 | 始终 |
+| **WARM** | 7-30 天 或 score >= 0.1 | 0.1 ~ 0.5 | 默认 |
+| **COLD** | > 30 天 且 score < 0.1 | 0.0 ~ 0.1 | 仅 --all |
 
 ### 自动旋转
 
-- 每次访问时更新 `last_access` 和 `access_count`
-- 低于阈值时自动移入 `archive/`
+- `rotate` 命令重新计算所有非 COLD 记忆的 decay_score
+- 降级为 COLD 的记忆自动移入 `archive/`
 - **COLD 层不删除，只归档**
 
 ---
@@ -155,44 +162,44 @@ decay_score = exp(-0.1 * days_since_access) * (1 + log(1 + access_count))
 |------|----------|------|----------|
 | **decision** | type=decision 或含"决策/选择/方案" | verbatim | ~20KB |
 | **process** | type=process 或一般执行类 | 摘要500字 | ~5KB |
-| **override** | 你说"这个重要/详细记住/记住这个方案/这是关键决策" | verbatim | ~20KB |
-
-### AI 判断示例
-
-```
-用户："我想转行做AI自媒体" → AI自动标记为 decision → verbatim记录
-用户："帮我下载 Git" → AI标记为 process → 摘要500字
-用户："这个方案很重要，记住" → verbatim（用户override）
-```
-
-### override 语法（任一触发）
-
-- "这个重要"
-- "详细记住"
-- "记住这个方案"
-- "这是关键决策"
+| **override** | 用户说"这个重要/详细记住" | verbatim | ~20KB |
 
 ---
 
 ## AI 自主升级机制
 
-### 升级流程
-
 ```
 experience 积累 → validation_count++
      ↓
-validation_count >= 5（同一pattern验证5次成功）
+validation_count >= 5（同一 pattern 验证 5 次成功）
      ↓
-写入 `D:\CLAUDE.MD\skills\{domain}\SKILL.md`
+写入 D:\CLAUDE.MD\memory\.edlm\skills\{domain}.md
      ↓
-下次遇到同类问题 → 优先使用 skill 配置
+下次遇到同类问题 → 优先使用 skill
 ```
 
-### 升级条件
+---
 
-- 同一 derived_pattern 验证 >= 5 次
-- 验证标准：执行后 outcome = SUCCESS
-- 写入位置：`D:\CLAUDE.MD\skills\{domain}\SKILL.md`
+## 搜索架构
+
+### 双层搜索
+
+| 层 | 后端 | 用途 |
+|----|------|------|
+| **主搜索** | Ruflo AgentDB (HNSW) | 语义向量检索，理解自然语言 |
+| **Fallback** | 文件扫描 + 关键词匹配 | Ruflo 不可用时的降级方案 |
+
+### Ruflo 同步
+
+每次保存 experience 后，同时通过 `memory_store` 写入 Ruflo AgentDB：
+- namespace: `edlm-memory`
+- key: experience id
+- value: 结构化文本（goal + domain + content_preview + derived_pattern）
+- tags: type, tier, domain, 关键词
+
+### Fallback 文件扫描
+
+综合评分：`0.6 * text_score + 0.4 * decay * (1 + log(1 + access)) * weight`
 
 ---
 
@@ -200,103 +207,85 @@ validation_count >= 5（同一pattern验证5次成功）
 
 | 钩子 | 时机 | 动作 |
 |------|------|------|
-| **SessionStart** | 会话开始 | 加载 me.md + patterns (hot tier) + briefing/current.md |
-| **GoalSet** | 用户给出目标 | 创建 experience tracking，设置 goal/domain |
-| **PostToolUse** | 工具执行后 | 捕获观察结果，更新 success_factors/failure_patterns |
-| **Stop** | 用户结束/你说"结束" | 评估目标达成情况，写入 experience |
-| **SessionEnd** | 会话结束 | 提取 pattern，更新 decay_score，检查 rotation |
+| **SessionStart** | 会话开始 | 加载 me.md + core.md + briefing/current.md |
+| **PostToolUse** | 工具执行后 | 捕获观察结果，更新 experience |
+| **Stop** | 用户结束 | 自动生成 session briefing |
+| **SessionEnd** | 会话结束 | 执行衰减检查，rotate 层级 |
+| **onExperience** | 保存经验时 | 写入文件 + 索引到 Ruflo |
 
 ---
 
-## Session Briefing 格式
+## 配置文件 (.edlm/config.json)
 
-```markdown
----
-session_id: xxx
-date: 2026-05-10
-duration: 45min
-tier: hot
-type: session
----
-
-## 上次做了什么
-- [列出主要完成项]
-
-## 开放任务
-- [ ] 未完成的任务
-
-## 关键决策
-- [列出决策内容]
-
-## 经验提取
-- derived_pattern: "..."
+```json
+{
+  "version": "2.0",
+  "decay": {
+    "lambda": 0.1,
+    "hot_days": 7,
+    "warm_days": 30,
+    "hot_min_score": 0.5,
+    "warm_min_score": 0.1
+  },
+  "type_weights": {
+    "process": 1.5,
+    "decision": 1.2,
+    "memory": 1.0
+  },
+  "search": {
+    "primary": "ruflo-agentdb",
+    "fallback": "file-scan",
+    "default_limit": 5
+  }
+}
 ```
 
 ---
 
-## 向量检索架构
+## CLI 命令
 
-### 混合评分
+```bash
+python edlm_memory/edlm_memory.py init      # 初始化目录结构
+python edlm_memory/edlm_memory.py status    # 显示记忆库统计
+python edlm_memory/edlm_memory.py search <query>  # 搜索记忆
+python edlm_memory/edlm_memory.py rotate    # 执行衰减旋转
+python edlm_memory/edlm_memory.py briefing  # 查看当前 briefing
+python edlm_memory/edlm_memory.py context   # 加载会话上下文
+python edlm_memory/edlm_memory.py sync-list # 列出待 Ruflo 同步数据
+```
+
+---
+
+## API
 
 ```python
-combined_score = 0.4 * BM25(query, text) + 0.6 * cosine_similarity(embed(query), embed(text))
+from edlm_memory.edlm_memory import (
+    save_experience,     # 保存经验
+    search_memories,     # 搜索（文件 fallback）
+    load_briefing,       # 加载当前 briefing
+    save_briefing,       # 保存 session briefing
+    check_and_rotate,    # 执行衰减旋转
+    load_session_context,# 加载会话启动上下文
+    list_for_ruflo_sync, # 列出同步数据
+    show_status,         # 显示统计
+)
 ```
-
-### 检索流程
-
-1. 自然语言 query → embedding（本地 fastembed）
-2. BM25 候选（SQLite FTS5）
-3. 向量相似度重排（sqlite-vec SIMD）
-4. 按 tier/type/weight 过滤
-5. 返回 top-K（默认 5 条）
-
-### 存储预估
-
-| 阶段 | 大小 |
-|------|------|
-| 初期（5K向量） | ~20MB |
-| 中期（10K向量） | ~37MB |
-| 1年后（50K向量）| ~185MB |
-
----
-
-## 与各插件对比
-
-| 特性 | claude-mem | mempalace | 本框架 |
-|------|-----------|-----------|--------|
-| 记忆内容 | 压缩摘要 | verbatim | **分层（decision完整/process摘要）** |
-| 向量存储 | ChromaDB（~936MB）| ChromaDB（~936MB）| **SQLite-vec（~37MB）** |
-| 衰减机制 | Token预算 | 无 | **HOT/WARM/COLD自动旋转** |
-| 类型权重 | 无 | 无 | **process 1.5x / decision 1.2x** |
-| 自主升级 | 无 | 无 | **validation_count → skills** |
-| Crash安全 | Worker WAL | 文件锁 | **SQLite WAL** |
-| 外部依赖 | Bun+ChromaDB | ChromaDB | **仅 Python** |
 
 ---
 
 ## 成功标准
 
-1. ✅ 新会话开始时自动加载上次摘要（无需手动）
-2. ✅ 自然语言能搜到历史经验（语义检索）
-3. ✅ 记忆库体积可控（初期~50MB，1年~200MB）
-4. ✅ 无需独立进程（SQLite-vec 嵌入 Python）
-5. ✅ 零手动操作（启动自动加载，关闭自动保存）
-6. ✅ 重启后可查（所有记忆在文件系统）
-7. ✅ 重要决策 verbatim，一般事件摘要
-8. ✅ AI 能自主升级（validation_count → skills）
+1. 新会话开始时自动加载上次摘要
+2. 自然语言能搜到历史经验（语义检索 via Ruflo）
+3. 记忆库体积可控（纯 Markdown，无数据库膨胀）
+4. 零外部依赖（Python 标准库 + Ruflo MCP）
+5. AI 能自主升级（validation_count → skills）
+6. COLD 层只归档不删除
+7. 重要决策 verbatim，一般事件摘要
 
 ---
 
-## 安装依赖
+## GitHub
 
-```bash
-pip install sqlite-vec
-```
-
----
-
-## GitHub 存档信息
-
-- 存档位置：https://github.com/meiliji19910321-pixel/edlm-memory-design
-- 存档内容：本设计文档 + 框架规范
-- 用途：跨设备同步、设计备份
+- 仓库：https://github.com/meiliji19910321-pixel/edlm-memory-design
+- 内容：设计文档 + 框架代码 + 配置示例

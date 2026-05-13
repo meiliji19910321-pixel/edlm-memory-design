@@ -9,9 +9,9 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pwsh -NoProfile -Command \"$b = Get-Content 'D:\\CLAUDE.MD\\memory\\briefing\\current.md' -ErrorAction SilentlyContinue; $p = Get-ChildItem 'D:\\CLAUDE.MD\\memory\\patterns\\*.md' -ErrorAction SilentlyContinue | Where-Object { $_.LastWriteTime -gt (Get-Date).AddDays(-7) } | Select-Object -First 3 | Get-Content; $m = 'D:\\CLAUDE.MD\\memory\\me.md'; $c = 'D:\\CLAUDE.MD\\memory\\core.md'; $me = if (Test-Path $m) { Get-Content $m } else { '' }; $co = if (Test-Path $c) { Get-Content $c } else { '' }; Write-Output ('MEMORY_LOADED|' + $me + '|END_ME|' + $co + '|END_CO|' + $b + '|END_B|' + $p)\"",
+            "command": "pwsh -NoProfile -Command \"$me = if (Test-Path 'D:\\CLAUDE.MD\\memory\\me.md') { Get-Content 'D:\\CLAUDE.MD\\memory\\me.md' -Raw } else { '' }; $core = if (Test-Path 'D:\\CLAUDE.MD\\memory\\core.md') { Get-Content 'D:\\CLAUDE.MD\\memory\\core.md' -Raw } else { '' }; $brief = if (Test-Path 'D:\\CLAUDE.MD\\memory\\briefing\\current.md') { Get-Content 'D:\\CLAUDE.MD\\memory\\briefing\\current.md' -Raw } else { '' }; Write-Output ('SESSION_MEMORY|' + $me + '|END_ME|' + $core + '|END_CORE|' + $brief + '|END_BRIEF')\"",
             "timeout": 30,
-            "statusMessage": "加载记忆..."
+            "statusMessage": "加载记忆上下文..."
           }
         ]
       }
@@ -21,7 +21,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pwsh -NoProfile -Command \"& 'D:\\Apps\\Python\\Python312\\python.exe' 'D:\\CLAUDE.MD\\plugins\\edlm_memory\\edlm_memory.py' rotate\"",
+            "command": "pwsh -NoProfile -Command \"& python 'D:\\CLAUDE.MD\\projects\\edlm-memory-framework\\edlm_memory\\edlm_memory.py' rotate\"",
             "timeout": 60,
             "statusMessage": "执行记忆衰减检查..."
           }
@@ -33,7 +33,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "pwsh -NoProfile -File D:/CLAUDE.MD/plugins/edlm_memory/stop_hook.ps1",
+            "command": "pwsh -NoProfile -Command \"& python 'D:\\CLAUDE.MD\\projects\\edlm-memory-framework\\edlm_memory\\briefing_generator.py'\"",
             "timeout": 30,
             "statusMessage": "保存会话摘要..."
           }

@@ -1,27 +1,44 @@
-# EDLM Memory Framework 使用指南
+# EDLM + Ruflo 融合记忆系统 使用指南
 
 ## 工作流程
 
-1. **SessionStart** → 自动加载 `me.md` + `core.md` + `briefing/current.md` + HOT patterns
-2. **执行任务** → AI 执行并记录到 experience
-3. **SessionEnd** → 自动 rotate 检查层级
-4. **Stop** → 保存会话摘要
+1. **SessionStart** → 自动加载 `me.md` + `core.md` + `briefing/current.md`
+2. **执行任务** → AI 执行并记录到 experience（同时索引到 Ruflo）
+3. **SessionEnd** → 自动 rotate 检查衰减层级
+4. **Stop** → 自动生成 session briefing
 
 ## 存储位置
 
-所有数据存储在 `D:\CLAUDE.MD\` 目录：
+所有数据存储在 `D:\CLAUDE.MD\memory\` 目录：
 
-- `memory/me.md` - L0 身份层
-- `memory/core.md` - L1 全局索引
-- `memory/experiences/` - 经验库
-- `memory/patterns/` - 成功模式
-- `memory/briefing/` - 会话摘要
-- `memory/archive/` - COLD 层归档
-- `corpora/memory.db` - SQLite 数据库
+- `me.md` - 身份层（始终加载）
+- `core.md` - 全局索引（始终加载）
+- `experiences/` - 经验库（Markdown + frontmatter）
+- `patterns/` - 成功模式
+- `briefing/` - 会话摘要
+- `archive/` - COLD 层归档
+- `.edlm/config.json` - 融合配置
 
 ## 重要规则
 
 - **decision 类型**: 完整 verbatim 记录
 - **process 类型**: 500字以内摘要
 - **用户 override**: 说"这个重要/详细记住" → verbatim
-- **validation_count >= 5** → 自动升级到 skills/
+- **validation_count >= 5** → 自动升级到 .edlm/skills/
+- **搜索**: 优先使用 Ruflo memory_search（namespace: edlm-memory），fallback 文件扫描
+
+## CLI 命令
+
+```bash
+python edlm_memory/edlm_memory.py init      # 初始化
+python edlm_memory/edlm_memory.py status    # 统计
+python edlm_memory/edlm_memory.py search <query>  # 搜索
+python edlm_memory/edlm_memory.py rotate    # 衰减旋转
+python edlm_memory/edlm_memory.py briefing  # 查看 briefing
+```
+
+## Ruflo 集成
+
+- 存储：`memory_store` (namespace: edlm-memory)
+- 搜索：`memory_search` (namespace: edlm-memory)
+- 同步：`edlm_memory.py sync-list` 列出待索引数据

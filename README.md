@@ -1,8 +1,27 @@
-# EDLM + PERMANENT MEMORY 融合框架
+# EDLM + Ruflo 融合记忆系统 v2.0
 
-**Experience-Driven Learning Memory + 永久记忆系统**
+**Experience-Driven Learning Memory + Ruflo AgentDB**
 
-融合 claude-mem + mempalace + palaia 三款记忆插件优点的新一代 AI 记忆框架。
+EDLM 提供内容组织逻辑（分层衰减/类型权重/自主升级），Ruflo 提供向量搜索索引。融合成一套零外部依赖的记忆系统。
+
+---
+
+## 架构
+
+```
+┌─────────────────────────────────────┐
+│  EDLM 层（内容组织）                 │
+│  - Experience / Pattern / Skill     │
+│  - HOT / WARM / COLD 三层衰减       │
+│  - process 1.5x / decision 1.2x    │
+│  - validation_count → skills/       │
+├─────────────────────────────────────┤
+│  Ruflo AgentDB 层（搜索索引）        │
+│  - HNSW 向量搜索 + 语义检索         │
+│  - 384维 ONNX 嵌入                  │
+│  - 零外部依赖（MCP 内置）            │
+└─────────────────────────────────────┘
+```
 
 ---
 
@@ -10,12 +29,13 @@
 
 | 特性 | 说明 |
 |------|------|
-| **AI 自主学习** | validation_count >= 5 时自动升级到 skills/ |
-| **分层存储** | decision=完整记录，process=500字摘要 |
-| **三层衰减** | HOT(<7天) / WARM(7-30天) / COLD(>30天) |
-| **轻量存储** | SQLite-vec ~37MB（vs ChromaDB ~936MB）|
-| **零手动操作** | 5 个钩子实现全自动化 |
-| **永久可检索** | 所有记忆存储在文件系统 |
+| **分层存储** | decision=完整 verbatim，process=500字摘要 |
+| **三层衰减** | HOT(<7天) / WARM(7-30天) / COLD(>30天)，自动归档 |
+| **类型权重** | process 1.5x / decision 1.2x / memory 1.0x |
+| **AI 自主升级** | 同一 pattern 验证 5 次 → 写入 skills/ |
+| **语义搜索** | Ruflo AgentDB HNSW 向量检索 |
+| **会话连续** | SessionStart 自动加载 briefing |
+| **零依赖** | Python 标准库 + Ruflo MCP（无 SQLite/ChromaDB） |
 
 ---
 
@@ -26,62 +46,43 @@ edlm-memory-framework/
 ├── README.md                          # 本文件
 ├── EDLM-MEMORY-FRAMEWORK.md           # 完整设计文档
 ├── edlm_memory/                       # 核心模块
-│   ├── edlm_memory.py                 # 主程序
+│   ├── edlm_memory.py                 # 主程序（纯文件操作）
 │   ├── briefing_generator.py          # 会话摘要生成
-│   └── stop_hook.ps1                  # 停止钩子脚本
-├── settings.json.example              # 配置示例
+│   └── stop_hook.ps1                  # Stop 钩子脚本
+├── settings.json.example              # Claude Code 钩子配置示例
 └── CLAUDE.md.example                  # Claude Code 指令示例
+```
+
+## 存储结构
+
+```
+D:\CLAUDE.MD\
+├── memory\
+│   ├── me.md                     # 身份（始终加载）
+│   ├── core.md                   # 全局索引（始终加载）
+│   ├── experiences\{YYYY-MM}\    # 经验库（Markdown + frontmatter）
+│   ├── patterns\                 # 成功模式
+│   ├── briefing\                 # 会话摘要
+│   ├── archive\                  # COLD 层归档
+│   └── .edlm\
+│       ├── config.json           # 融合配置
+│       └── skills\               # 自主升级技能
 ```
 
 ---
 
-## 快速安装
+## 快速使用
 
-### 1. 克隆仓库
-
-```bash
-git clone https://github.com/meiliji19910321-pixel/edlm-memory-design.git
-cd edlm-memory-design
-```
-
-### 2. 安装依赖
-
-```bash
-# Python 3.8+
-pip install sqlite-vec
-
-# 或使用 requirements.txt
-pip install -r requirements.txt
-```
-
-### 3. 初始化数据库
+### 初始化
 
 ```bash
 python edlm_memory/edlm_memory.py init
 ```
 
-### 4. 配置 Claude Code
-
-将 `settings.json.example` 中的配置复制到你的 `D:\CLAUDE.MD\settings.json`：
-
-```json
-{
-  "hooks": {
-    "SessionStart": [...],
-    "SessionEnd": [...],
-    "Stop": [...]
-  }
-}
-```
-
----
-
-## 使用方法
-
 ### 保存经验
 
 ```python
-from edlm_memory import save_experience
+from edlm_memory.edlm_memory import save_experience
 
 exp_id = save_experience(
     goal='设计记忆框架',
@@ -89,56 +90,58 @@ exp_id = save_experience(
     content='讨论了融合方案的选择...',
     outcome='SUCCESS',
     success_factors=['通过提问逐步澄清需求'],
-    derived_pattern='设计记忆系统时，应该先问用户的核心目标',
+    derived_pattern='设计记忆系统时，先问核心目标',
     tags=['记忆系统', 'EDLM']
 )
 ```
 
-### 搜索记忆
+### 搜索记忆（文件扫描 fallback）
 
 ```python
-from edlm_memory import search_memories
+from edlm_memory.edlm_memory import search_memories
 
 results = search_memories('记忆框架')
-for score, r in results:
-    print(f'[{r[4]}] {r[1]} (score: {score:.2f})')
+for score, meta, body, _ in results:
+    print(f'[{score:.3f}] {meta["goal"]}')
 ```
 
-### 查看当前 Briefing
+### 语义搜索（通过 Ruflo MCP）
 
-```python
-from edlm_memory import load_briefing
+在 Claude Code 中直接使用 `memory_search` 工具，namespace 设为 `edlm-memory`。
 
-briefing = load_briefing()
-print(briefing)
-```
-
-### 执行层级旋转
+### 查看状态
 
 ```bash
-python edlm_memory/edlm_memory.py rotate
+python edlm_memory/edlm_memory.py status
+```
+
+输出示例：
+```
+  EDLM 融合记忆系统 v2.0
+  经验总数: 2
+    HOT: 2  |  WARM: 0  |  COLD: 0
+    process: 1  |  decision: 1  |  memory: 0
+  Patterns: 0
+  Briefings: 0
+  衰减 λ: 0.1
+  搜索后端: ruflo-agentdb
 ```
 
 ---
 
-## 存储结构
+## 钩子配置
 
-```
-D:\CLAUDE.MD\
-├── memory\
-│   ├── me.md                     # L0: 身份
-│   ├── core.md                   # L1: 全局索引
-│   ├── experiences\{YYYY-MM}\    # 经验库
-│   ├── patterns\                 # 成功模式
-│   ├── briefing\                 # 会话摘要
-│   └── archive\                  # COLD 层归档
-└── corpora\
-    └── memory.db                 # SQLite + sqlite-vec
-```
+将 `settings.json.example` 中的 hooks 配置合并到你的 `D:\.claude\settings.json`：
+
+| 钩子 | 动作 |
+|------|------|
+| **SessionStart** | 加载 me.md + core.md + briefing/current.md |
+| **SessionEnd** | 执行衰减检查和旋转 |
+| **Stop** | 自动生成 session briefing |
 
 ---
 
-## 框架核心逻辑
+## 框架核心流程
 
 ```
 用户提出目标
@@ -147,6 +150,8 @@ AI 执行 → 结果 → 自判断 SUCCESS/FAILURE
      ↓
 存入 experience（含 tier/decay_score/type/weight）
      ↓
+Ruflo AgentDB 自动索引（语义搜索）
+     ↓
 定期提取 pattern → 更新 patterns/
      ↓
 validation_count >= 5 → 写入 skills/（自主升级）
@@ -154,23 +159,19 @@ validation_count >= 5 → 写入 skills/（自主升级）
 
 ---
 
-## 与其他框架对比
+## 衰减公式
 
-| 特性 | claude-mem | mempalace | 本框架 |
-|------|-----------|-----------|--------|
-| 记忆内容 | 压缩摘要 | verbatim | **分层** |
-| 向量存储 | ChromaDB(~936MB) | ChromaDB(~936MB) | **SQLite-vec(~37MB)** |
-| 衰减机制 | Token预算 | 无 | **HOT/WARM/COLD** |
-| 类型权重 | 无 | 无 | **process 1.5x** |
-| 自主升级 | 无 | 无 | **validation_count→skills** |
+```python
+decay_score = exp(-0.1 * days_since_access) * (1 + log(1 + access_count))
+```
 
----
+| 层级 | 定义 | decay_score |
+|------|------|-------------|
+| **HOT** | < 7 天 或 score >= 0.5 | 0.5 ~ 1.0 |
+| **WARM** | 7-30 天 或 score >= 0.1 | 0.1 ~ 0.5 |
+| **COLD** | > 30 天 且 score < 0.1 | 0.0 ~ 0.1 |
 
-## 注意事项
-
-- 所有数据存储在 `D:\CLAUDE.MD\` 目录
-- COLD 层不删除，只归档
-- 首次使用需要配置 SSH Key 用于 GitHub 同步
+COLD 层不删除，只归档到 `archive/`。
 
 ---
 
